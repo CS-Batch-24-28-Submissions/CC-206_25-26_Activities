@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="assets/ortega-profile.jpg"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Samantha Lisha Ortega</span></h1>
+                <p>BS Computer Science Student | Aspiring Software Developer</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Doomscrolling 📱</li>
+                        <li>Gaming 🎮</li>
+                        <li>Coding 💻</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Experimenting with code and turning ideas into working projects</li>
+                        <li>Designing visuals that capture a story or mood</li>
+                        <li>Love unwinding with music and discovering new playlists</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Slow walkers</li>
+                        <li>Long repetitive tasks</li>
+                        <li>Cluttered code that’s hard to read</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">Git</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="assets/project-one.png"
+                            alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cozy Beans</h3>
+                        <p>A simple web app to manage admin of Cozy Beans Cafe</p>
+                        <a href="https://github.com/fonsfons28/catcafe-admin-dashboard" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="assets/project-two.png"
+                            alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>An iPod‑style playlist player with scroll‑wheel controls for play/pause, track navigation, and menus. Supports playlists, song scoring, and adding tracks via Spotify search.</p>
+                        <a href="https://github.com/aliyahsnts/dsa-playlist" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I’m always excited to explore fresh projects, creative ideas, and opportunities to help bring your vision to life.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ortega, Samantha Lisha. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
