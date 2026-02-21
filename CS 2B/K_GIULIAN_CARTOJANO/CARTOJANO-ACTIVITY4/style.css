@@ -38,9 +38,24 @@ body { font-family: 'Inter', sans-serif; color: #334155; background: var(--white
 .marker { color: var(--primary); margin-bottom: 20px; border-bottom: 2px solid var(--accent); display: inline-block; }
 
 /* grid */
-.tech-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.tech-card { background: var(--white); padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; }
-.tech-card h3 { color: var(--accent); font-size: 1rem; margin-bottom: 8px; }
+.tech-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+.tech-card { 
+    background: var(--white); 
+    padding: 20px; 
+    border-radius: 8px; 
+    border: 1px solid #e2e8f0; 
+    /* added the vertical line effect here */
+    border-left: 5px solid var(--primary); 
+}
+.tech-card h3 { 
+    color: var(--accent); 
+    font-size: 1rem; 
+    margin-bottom: 8px; 
+}
 
 /* contact box */
 .contact-box { background: var(--light); padding: 25px; border-radius: 8px; border-left: 5px solid var(--primary); }
