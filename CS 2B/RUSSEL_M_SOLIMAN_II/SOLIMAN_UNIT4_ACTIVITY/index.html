@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soliman's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Soliman<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="https://scontent.fceb6-3.fna.fbcdn.net/v/t39.30808-6/490367045_3059594507522345_4911705738369434330_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeG9zTXEcltgb6svZPI_EpcFqIBxYqWz8ESogHFipbPwRDx_vh7dly-rlaMSdqM8KUX7_w2MvWH3m4MbLwrX5UjK&_nc_ohc=DJKbcnnPC20Q7kNvwH6ugoI&_nc_oc=Adk88yhlnJsmA5loaqEAMY20vFLy0B-GqvigcP4OuwDOVlWkNPfbaZ6llwLmWt8tjtE&_nc_zt=23&_nc_ht=scontent.fceb6-3.fna&_nc_gid=1I1BG6PjNf8p2cTM9rum2A&oh=00_AfsNvcpJ5vn6cdhoC6XFSX-u6foTqzyuswCzNdPxOSXEqg&oe=699FB3B4"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Russel Soliman II</span></h1>
+                <p>Senior High School Student | Aspiring Quality Assurance Tester</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View My Work</a>
+                    <a href="#personal" class="btn secondary">Do Not Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Basketball 🏀 </li>
+                        <li>Listening To Music 🎧</li>
+                        <li>Playing Bass Guitar 🎸</li>
+                        <li>Playing Video Games 🎮</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>TV Series 📺</li>
+                        <li>Sleeping 😴</li>
+                        <li>Doing Nothing 🧠</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Doing Homework</li>
+                        <li>Slow Internet</li>
+                        <li>Waking up too early</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">Networking</span>
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">SQL</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop"
+                            alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 1: Doing Nothing</h3>
+                        <p>Just Slacking Off - _ -</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop"
+                            alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 2: Eating While Coding</h3>
+                        <p>Just eating while coding - _ -</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I'm kind of open to talking about new projects, quality testing or opportunities to be part of your
+                    visions.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Russel Soliman II. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
