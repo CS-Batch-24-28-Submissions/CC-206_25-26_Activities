@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">ALIYAH MARIEL<span> SANTOS</span></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#personal">About Me</a></li>
+          <li><a href="#professional">Professional</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- home -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="profile-container">
+            <img
+              src="assets/aliyah.png"
+              alt="Student Profile"
+              class="profile-img"
+            />
+          </div>
+          <h1>Hi, I'm <span class="highlight">Aliyah Mariel Santos,</span></h1>
+          <p>
+            2nd-Year Computer Science Student | Aspiring Full-Stack Developer
+          </p>
+          <div class="hero-buttons">
+            <a href="#professional" class="btn primary">View Work</a>
+            <a href="#personal" class="btn secondary">Know Me Better</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me -->
+      <section id="personal" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="personal-grid">
+          <div class="card glass">
+            <h3>💻 Interests</h3>
+            <ul>
+              <li>
+                <!-- &#x2765; - hex html entity for the rotated heart -->
+                &#x2765; Programming and building small full-stack projects
+              </li>
+              <li>
+                &#x2765; UI/UX Design and making interfaces feel intuitive
+              </li>
+              <li>&#x2765; Data, analytics, and understanding patterns</li>
+            </ul>
+          </div>
+          <div class="card glass">
+            <h3>🎨 Hobbies</h3>
+            <ul>
+              <li>&#x2765; Coding and building small projects</li>
+              <li>&#x2765; Playing guitar and learning new songs</li>
+              <li>&#x2765; Traveling and exploring new places</li>
+            </ul>
+          </div>
+          <div class="card glass">
+            <h3>💗 Likes</h3>
+            <ul>
+              <li>&#x2765; Working on meaningful projects</li>
+              <li>&#x2765; Clean, minimal interfaces</li>
+              <li>&#x2765; Coffee & Deep Tech Chats</li>
+            </ul>
+          </div>
+          <div class="card glass">
+            <h3>🚫 Dislikes</h3>
+            <ul>
+              <li>&#x2765; Uncommented Code</li>
+              <li>&#x2765; Slow Internet</li>
+              <li>&#x2765; Waking up too early</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- professional journey -->
+      <section id="professional" class="section">
+        <h2 class="section-title">Professional Journey</h2>
+
+        <div class="skills-container">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <span class="skill-badge">HTML/CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">TypeScript</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">MongoDB</span>
+            <span class="skill-badge">Next.js</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">ExpressJS</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">Figma</span>
+            <span class="skill-badge">Git</span>
+          </div>
+        </div>
+
+        <!-- projects -->
+        <div class="projects-grid">
+          <div class="project-card glass">
+            <div class="project-image">
+              <img src="assets/project-1.png" alt="Project One" />
+            </div>
+            <div class="project-info">
+              <h3>Cozy Beans Café</h3>
+              <p><i>Frontend Developer</i></p>
+              <p>
+                Cozy Beans Café is a web-based order tracking and management
+                dashboard developed to streamline daily operations in a café
+                setting.
+              </p>
+              <a href="#" class="project-link">Learn More →</a>
+            </div>
+          </div>
+          <div class="project-card glass">
+            <div class="project-image">
+              <img src="assets/project-2.png" alt="Project Two" />
+            </div>
+            <div class="project-info">
+              <h3>SIGMALAYA</h3>
+              <p><i>UI/UX Designer</i></p>
+              <p>
+                SIGMALAYA is a 3rd National Place–winning educational coding
+                adventure game designed to teach programming through interactive
+                gameplay.
+              </p>
+              <a href="#" class="project-link">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact form -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-card glass">
+          <p>
+            I'm always open to talking about new projects, creative ideas or
+            opportunities to be part of your visions.
+          </p>
+          <form id="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Aliyah Mariel Santos. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
