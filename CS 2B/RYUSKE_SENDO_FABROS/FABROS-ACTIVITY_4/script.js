@@ -37,12 +37,25 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Simple Form Submission Handling
+    // Contact Form Submission Handling using mailto
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Thanks for reaching out! (This is a template, so no email was actually sent)');
+            
+            const name = contactForm.querySelector('[name="name"]').value;
+            const email = contactForm.querySelector('[name="email"]').value;
+            const message = contactForm.querySelector('[name="message"]').value;
+            
+            const recipientEmail = 'ryuskesendo.fabros@edu.ph';
+            
+            const subject = encodeURIComponent(`Portfolio Message from ${name}`);
+            const body = encodeURIComponent(
+                `${message}`
+            );
+            
+            window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+            
             contactForm.reset();
         });
     }
