@@ -1,12 +1,12 @@
 :root {
-  --primary-color: #9cfc97;
-  --primary-hover: #c9e3ac;
-  --bg-color: #353d2f;
-  --text-color: #f8fafc;
-  --text-muted: #cacaca;
-  --glass-bg: #515b3a;
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --accent-gradient: linear-gradient(135deg, #6ba368 0%, #9cfc97 100%);
+  --primary-color: #089c00;
+  --primary-hover: #99d895;
+  --bg-color: #f2ffe7;
+  --text-color: #002b02;
+  --text-muted: #5c5c5c;
+  --glass-bg: #ebffda;
+  --glass-border: rgba(0, 182, 0, 0.342);
+  --accent-gradient: linear-gradient(135deg, #09ac00 0%, #85bb81 100%);
 }
 
 * {
@@ -30,7 +30,7 @@ header {
   width: 100%;
   z-index: 1000;
   padding: 1.5rem 5%;
-  background: #293025cb;
+  background: #e5ffd6cb;
   backdrop-filter: blur(10px);
 }
 
@@ -163,7 +163,7 @@ nav a:hover {
 /* Glass Cards */
 .glass {
   background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
+  border: 1.5px solid var(--glass-border);
   backdrop-filter: blur(12px);
   border-radius: 20px;
   padding: 2rem;
