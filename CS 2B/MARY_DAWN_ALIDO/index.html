@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="assets/profile.png"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Mary Dawn M. Alido</span></h1>
+                <p>College Student | Aspiring Mobile App Developer | <br> BYLO's Developer 1</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Watching Documentaries 📓</li>
+                        <li>Coding 💻</li>
+                        <li>Solving Puzzles 🧩</li>
+                        <li>Playing Video Games 🎮</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Takoyaki</li>
+                        <li>Reading Manga</li>
+                        <li>Chilla's Art games</li>
+                        <li>Gambling</li>
+                        <li>Making New Friends</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Clickbait Videos</li>
+                        <li>Being Broke</li>
+                        <li>Commuting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">Flutter</span>
+                    <span class="skill-badge">Next.js</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">Tailwind</span>
+                    <span class="skill-badge">PHP</span>
+                    <span class="skill-badge">Java</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="assets/AAC.png"
+                            alt="AAC Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>CC 203 Website</h3>
+                        <p>A simple website to inform students about the skills needed to succeed in IT.</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="assets/bylo.jpg"
+                            alt="Bylo Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>BYLO</h3>
+                        <p>BYLO is a peer-to-peer marketplace for the buying, selling, and bidding of secondhand and original items.</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I'm always open to talking about new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mary Dawn M. Alido. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
