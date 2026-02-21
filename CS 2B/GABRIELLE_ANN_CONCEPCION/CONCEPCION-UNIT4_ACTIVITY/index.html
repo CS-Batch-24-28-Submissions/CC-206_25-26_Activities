@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/471206388_1760518031463645_7423663331025384872_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEiWkkWZ7L5nFW4Ge0OLJFwQR-LXKiPMLlBH4tcqI8wudeypjKvS7Gy85YndPOH7as0NT0tNKxoSF71b4KvoBoN&_nc_ohc=GjiIkwnS434Q7kNvwEEBgxS&_nc_oc=AdlK4OnQhXiRpxi4Z32iSNkxZTRuZJjjQrKzHmpHL4igbODZI-bqycXlobKzcFj-6Q8&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=IlUydffLogHEwRLk8_wzDQ&oh=00_Aft_lzYWpwgAm25OWHEuxDCHomTKg7koAX300jULcyqmlQ&oe=699F9CFC"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Gabrielle Ann</span></h1>
+                <p>College Student | Aspiring Fullstack Developer</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Reading 🔖</li>
+                        <li>Cycling 🚴</li>
+                        <li>Gaming 🎮</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Video Essays</li>
+                        <li>Ratatouille Pastas</li>
+                        <li>Lovecraftian Horror</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Tardy people</li>
+                        <li>Inconsiderate behavior</li>
+                        <li>Unprofessionalism</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Git</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://i.pinimg.com/736x/b2/10/4c/b2104c9ba370108011717d8db50a67a1.jpg"
+                            alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A website group project for pet adoption management.</p>
+                        <a href="https://github.com/GabrielleConcepcion/cc203-pet" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://i.pinimg.com/1200x/5c/04/4d/5c044dfa3ddd5ef809f1c8e473d9bf35.jpg"
+                            alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>Informative website created for NSCI Group Project.</p>
+                        <a href="https://github.com/GabrielleConcepcion/tech-formation" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I'm always open to talking about new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
