@@ -1,0 +1,216 @@
+/* Variables */
+:root {
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --gray: #888888;
+    --dark-gray: #1a1a1a;
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--black);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.logo { font-weight: 800; font-size: 1.2rem; }
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 10vw, 7rem); /* Responsive font sizing */
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.mono-text {
+    font-family: 'Courier New', monospace;
+    color: var(--gray);
+}
+
+.sub-headline {
+    font-size: 1.1rem;
+    color: var(--gray);
+}
+
+/* Sections */
+.section {
+    padding: 100px 0;
+    border-top: 1px solid var(--dark-gray);
+}
+
+.section-title {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bio-text {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    max-width: 900px;
+}
+
+/* Grid System - Responsive */
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Stacked on mobile */
+    gap: 20px;
+}
+
+.work-item {
+    aspect-ratio: 16/9;
+    background: var(--dark-gray);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.work-item:hover {
+    border-color: var(--white);
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 100px 0 50px 0;
+    background-color: #050505;
+}
+
+.email-link {
+    font-size: clamp(1.2rem, 5vw, 3rem);
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 2px solid var(--white);
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: 0.8rem;
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 768px) {
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+    
+    .hero {
+        padding: 0 10%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .work-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
+    }
+}
+
+/* Layout for About Section */
+.about-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 400px;
+    filter: grayscale(100%); /* Keeps it monochromatic */
+    transition: var(--transition);
+}
+
+.profile-image img:hover {
+    filter: grayscale(0%); /* Optional: pops to color on hover */
+}
+
+/* Work Media Styling */
+.work-item {
+    position: relative;
+    overflow: hidden; /* Clips the image/video to the card */
+    padding: 0; /* Remove padding to let media fill the box */
+}
+
+.work-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the area without stretching */
+    filter: grayscale(100%) brightness(0.7);
+    transition: var(--transition);
+}
+
+.work-item:hover .work-media {
+    filter: grayscale(0%) brightness(1);
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Ensure text stays visible over the image */
+.work-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Desktop adjustment for About */
+@media (min-width: 768px) {
+    .about-flex {
+        flex-direction: row;
+        align-items: center;
+    }
+}
