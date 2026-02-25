@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johanah's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="sky-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#values">Values & Dreams</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="profile-container">
+        <img src="https://brideandbreakfast.ph/wp-content/uploads/2015/02/Kathryn-Bernardo-25.jpg"
+             alt="Johanah Profile" class="profile-img">
+      </div>
+      <h1 class="typewriter">Hi, I'm Johanah Nicole G. Requina</h1>
+      <p class="tagline">Dreamer under the blue skies | Viva La Vida | Future Software Engineer</p>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section id="interests" class="section">
+    <h2 class="section-title">Interests</h2>
+    <div class="interests-grid">
+      <div class="card glass">
+        <h3>Artistic Interests</h3>
+        <ul>
+          <li>Capturing spontaneous moments through photography and videography</li>
+          <li>Admiring the beauty of the sky and its changing colors</li>
+        </ul>
+      </div>
+      <div class="card glass">
+        <h3>Personal Interests</h3>
+        <ul>
+          <li>I love color blue, you'll see a hint of blue in me.</li>
+          <li>My babies: Zoro and Gray</li>
+        </ul>
+      </div>
+      <div class="card glass">
+        <h3>Other Interests</h3>
+        <ul>
+          <li>Kdrama & Cdrama</li>
+          <li>K-pop (Enhypen, BTS, and Blackpink)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values & Dreams Section -->
+  <section id="values" class="section">
+    <h2 class="section-title">Values & Dreams</h2>
+    <div class="pillars">
+      <div class="pillar glass">
+        <h3>My Values</h3>
+        <ul>
+          <li>Authenticity — staying true to myself</li>
+          <li>Creativity — finding beauty in everyday moments</li>
+          <li>Resilience — learning from challenges</li>
+          <li>Connection — cherishing bonds with people, nature, and experiences</li>
+        </ul>
+      </div>
+      <div class="pillar glass">
+        <h3>My Dreams</h3>
+        <ul>
+          <li>To become a software engineer</li>
+          <li>To capture life’s fleeting moments through photography</li>
+          <li>To continue exploring stories, music, and the skies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-card glass">
+      <p>Let’s connect under the starry skies!</p>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn sky-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Ni.Co. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
