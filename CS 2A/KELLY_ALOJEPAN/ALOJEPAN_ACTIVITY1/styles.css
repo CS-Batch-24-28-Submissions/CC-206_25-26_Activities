@@ -5,6 +5,33 @@
     --primary-font: 'Share Tech Mono';
     --secondary-font: 'Jetbrains Mono';
 }
-a{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+
+}
+header{
+    display: flex;
+    padding: 2rem 3.5rem;
+    justify-content: space-between;
+}
+header a{
+    color: var(--secondary-color);
     font-family: var(--primary-font);
+}
+a{
+    text-decoration:none;
+}
+nav{
+    display: flex;
+    gap: 2rem;
+}
+nav a{
+    font-size: 28px;
+}
+.logo{
+    font-size: 36px;
+    margin-left: 100px;
 }
