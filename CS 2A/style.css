@@ -1,0 +1,212 @@
+:root {
+  /* color tokens for text + accents */
+  --text-color: #f1f5f9;
+  --text-muted: #cbd5e1;
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --accent-indigo: #0b1d51;
+  --accent-blue: #1e3a8a;
+  --accent-cyan: #3b82f6;
+  --accent-yellow: #facc15;
+}
+
+/* baseline reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  /* layout + background treatment */
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  transition: background 1s ease;
+  background: linear-gradient(to bottom, var(--accent-indigo), var(--accent-blue));
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* nav bar styling */
+.sky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 29, 81, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 1rem;
+  z-index: 1000;
+}
+.sky-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+}
+.sky-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 0.5rem;
+}
+.sky-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-yellow);
+  transition: width 0.3s ease;
+}
+.sky-nav a:hover::after {
+  width: 100%;
+}
+
+/* hero section visuals */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+.typewriter {
+  font-size: 2.5rem;
+  color: var(--accent-yellow);
+  overflow: hidden;
+  border-right: .15em solid var(--accent-yellow);
+  white-space: nowrap;
+  animation: typing 4s steps(30, end), blink .75s step-end infinite;
+}
+@keyframes typing { from { width: 0 } to { width: 100% } }
+@keyframes blink { 50% { border-color: transparent } }
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid var(--accent-cyan);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+  margin-bottom: 1rem;
+  object-fit: cover;  
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+/* section blocks */
+.section { 
+  padding: 120px 10%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+.section + .section {
+  margin-top: 100px;
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  background: linear-gradient(90deg, var(--accent-indigo), var(--accent-cyan), var(--accent-yellow));
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s infinite linear;
+}
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* glass card style */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.glass:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-yellow);
+}
+
+/* interests grid layout */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* pillars arrangement */
+.pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pillar {
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+/* contact form area */
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-card p {
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact-form input,
+#contact-form textarea {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--glass-border);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--text-color);
+  font-family: inherit;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-yellow);
+}
+.sky-btn {
+  background: linear-gradient(90deg, var(--accent-indigo), var(--accent-cyan), var(--accent-yellow));
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.sky-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+}
+
+/* footer styling */
+footer {
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 120px;
+}
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  .pillars { flex-direction: column; }
+  .typewriter { font-size: 1.5rem; }
+}
