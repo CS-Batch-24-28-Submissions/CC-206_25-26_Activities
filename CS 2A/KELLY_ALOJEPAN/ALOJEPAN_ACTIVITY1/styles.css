@@ -1,6 +1,7 @@
 :root{
     --background-color: #000000;
     --primary-color: #2AFB00;
+    --primary-color-transparent: #242d225a;
     --secondary-color: #FFFFFF;
     --primary-font: 'Share Tech Mono';
     --secondary-font: 'Jetbrains Mono';
@@ -9,8 +10,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--background-color);
+    
 
+}
+body{
+    background-color: var(--background-color);
 }
 header{
     display: flex;
@@ -83,6 +87,54 @@ nav a{
     height: 100%;
     object-fit: cover;
 }
+/* About Section */
+.about-section{
+    display: flex;
+    height: 100%;
+    justify-content: right;
+    padding: 4.6em;
+}
+.about-card{
+    margin-top: 24px;
+    width: 650px;
+    border: 2px solid var(--primary-color);
+    padding: 3.4rem;
+    border-radius: 24px;
+    background-color: var(--primary-color-transparent);
+    color: var(--primary-color);
+    
+}
+.about-heading{
+    font-family: var(--secondary-font);
+    padding: 0px 12px 26px 12px;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 24px;
+}
+.about-heading::after {
+    content: "_";
+    margin-left: 6px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+.about-content{
+    margin-top: 24px;
+    font-family: var(--primary-font);
+    position: relative;
+}
+.about-content p{
+    font-weight: bold;
+}
+.about-content span{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    font-size: 8px;
+}
+
 /* Projects Section */
 .projects-section header{
     display: flex;
@@ -92,6 +144,7 @@ nav a{
     color: var(--primary-color);
     font-family: var(--primary-font);
     font-size: 64px;
+    margin-top: 24px;
 }
 .projects-section div{
     display: flex;
@@ -117,10 +170,93 @@ nav a{
 .projects-subheading{
     display: flex;
     align-items: center;
-    gap: 2.6rem;
+    gap: 1.6rem;
 }
 .projects-subheading div{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;                             
+    width: 100%;                           
+    margin: 0 auto;   
+    justify-content: center;
+    
+}
+.project{
+    display: flex;
+
+    position: relative;
+    text-decoration: none;   
+    color: inherit;          
+    height: 300px;
+    width: 45%;
+    max-width: 45%;
+    border-radius: 12px 0px 0px 12px;
+    border: 1px solid var(--secondary-color);
+    gap: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+}
+.project:hover {
+    transform: scale(1.03); /* slight zoom */
+    box-shadow: 0 0 20px var(--primary-color); /* neon glow */
+    background-color: #1a1a1a; /* slightly lighter background */
+    border-color: var(--primary-color); /* green border on hover */
+}
+
+.project-border{
+    border-radius: 12px 0px 0px 12px;
+    width: 30px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+.project-content{
+    margin-top: 24px;
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.project-content .subheading{
+    margin-bottom: 12px;
+}
+.project-content .projects-path{
+    margin-bottom: 6px;
+}
+.project-description{
+    font-size: 18px;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+.project-stack{
+    display: flex;
+    margin-top: 18px;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.stack{
+    display: inline-block; /* shrink width to text */
+    padding: 8px 12px;     /* horizontal & vertical padding */
+    border-radius: 24px;    /* rounded corners */
+    border: 1px solid var(--primary-color);
+    white-space: nowrap;   /* prevent breaking the text */
+    font-size: 18px;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+.project-status{
+    position: absolute;
+    bottom: 4px; /* distance from bottom of card */
+    right: -56px;  /* distance from right of card */
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 48px;
+}
+.in-progress{
+    color: #FFC107; /* work in proh*/
 }

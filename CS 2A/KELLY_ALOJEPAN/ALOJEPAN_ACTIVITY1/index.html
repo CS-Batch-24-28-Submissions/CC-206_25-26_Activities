@@ -17,9 +17,10 @@
             </a>
             <!-- Nav links-->
             <nav>
-                <a href="#projects">Projects</a>
-                <a>Tools & Skills</a>
                 <a>About</a>
+                <a href="#projects">Projects</a>
+                <a>Tools</a>
+                
             </nav>
         </header>
         <div class="fade-divider-top"></div>
@@ -29,7 +30,7 @@
                 <div class="landing-text-wrapper">
                     <p>Hello,</p>
                     <p>I am <span class="primary-color">Kelly</span></p>
-                    <p>Backend Developer</p>
+                    <p>Full Stack Developer</p>
                 </div>
             </div>
             <div class="landing-img">
@@ -38,6 +39,59 @@
         </section>
         <div class="fade-divider-bottom"></div>
 
+        <section class="about-section">
+            <div class="about-card">
+                <div class="about-heading">
+                    <span>GET</span>
+                    <span>/BSCS2A/Alojepan/Profile</span>
+                </div>
+                <div class="about-content">
+                    <p> < Response</p>
+                    <span>JSON</span>
+                    <div class="response-box">
+                      <pre>{
+  "student": {
+    "name": "Kelly Ydrhan A. Alojepan",
+    "role": "Backend Developer",
+    "location": "Alimodian, Iloilo, Philippines",
+
+    "education": {
+      "course": "Bachelor of Science in Computer Science",
+      "school": "West Visayas State University"
+    },
+
+    "skills": [
+      "HTML",
+      "CSS",
+      "PHP",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Flask",
+      "Firebase",
+      "MongoDB",
+      "SQL",
+      "Docker"
+    ],
+
+    "hobbies": [
+      "Reading",
+      "Gaming",
+      "Coding",
+      "Volleyball"
+    ],
+
+    "contact": {
+      "email": "kellyydrhan.alojepan@wvsu.edu.ph",
+      "linkedin": "https://www.linkedin.com/in/kelly-ydrhan-alojepan-66298a347/",
+      "github": "github.com/hiimkhel"
+    }
+  }
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="projects-section" id="#projects">
             <header>
                 <p class="projects-title">PROJECTS</p>
@@ -49,9 +103,90 @@
                         <span class="subheading">GET</span>
                         <span class="projects-path">BSCS2A:\students\Alojepan\Projects</span>
                     </div>
-                    
                 </div>
             </header>
+
+            <div class="projects">
+                <a href="https://github.com/hiimkhel/Devnotes.git" target="_blank" class="project">
+                    <div class="project-border"></div>
+                    <div class="project-content">
+                        <p class="subheading">GET</p>
+                        <p class="projects-path">Alojepan/Projects/DevNotes</p>
+                        <p class="project-description">CS50 Final Project: Developers Documentation Platform</p>
+
+                        <div class="project-stack">
+                            <div class="stack">HTML</div>
+                            <div class="stack">CSS</div>
+                            <div class="stack">Flask</div>
+                            <div class="stack">SQLite</div>
+                            <div class="stack">Jinja 2</div>
+                        </div>
+
+                        <span class="project-status">200 OK</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/USC-CITE/Re-Claim" target="_blank" class="project">
+                    <div class="project-border"></div>
+                    <div class="project-content">
+                        <p class="subheading">GET</p>
+                        <p class="projects-path">Alojepan/Projects/ReClaim</p>
+                        <p class="project-description">University-wide Lost & Found Digital Platform</p>
+
+                        <div class="project-stack">
+                            <div class="stack">HTML</div>
+                            <div class="stack">CSS</div>
+                            <div class="stack">JavaScript</div>
+                            <div class="stack">PHP</div>
+                            <div class="stack">Docker</div>
+                            <div class="stack">SQL</div>
+                        </div>
+
+                        <span class="project-status in-progress">102 WIP</span>
+                    </div>
+                </a>
+
+                <a href="groce-list-2a1b.vercel.app" target="_blank" class="project">
+                    <div class="project-border"></div>
+                    <div class="project-content">
+                        <p class="subheading">GET</p>
+                        <p class="projects-path">Alojepan/Projects/GroceList</p>
+                        <p class="project-description">CIPHER RND: Grocery Management Platform</p>
+
+                        <div class="project-stack">
+                            <div class="stack">TypeScript</div>
+                            <div class="stack">Node.js</div>
+                            <div class="stack">Tailwind CSS</div>
+                            <div class="stack">MongoDB</div>
+                            <div class="stack">Render</div>
+                            <div class="stack">Vercel</div>
+                        </div>
+
+                        <span class="project-status">200 OK</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/hiimkhel/Linawa.git" target="_blank" class="project">
+                    <div class="project-border"></div>
+                    <div class="project-content">
+                        <p class="subheading">GET</p>
+                        <p class="projects-path">Alojepan/Projects/Linawa</p>
+                        <p class="project-description">DemocraTech Civic Engagement Platform for Civic Participation</p>
+
+                        <div class="project-stack">
+                            <div class="stack">React</div>
+                            <div class="stack">Node.js</div>
+                            <div class="stack">CSS</div>
+                            <div class="stack">Flask</div>
+                            <div class="stack">Firebase</div>
+                            <div class="stack">Vercel</div>
+                        </div>
+
+                        <span class="project-status">200 OK</span>
+                    </div>
+                </a>
+                
+            </div>
         </section>
     </main>
 </body>
