@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="images/personal_image.jpeg"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Elaijah!</span></h1>
+                <p>College Student | Aspiring Software Project Manager & Graphic Designer</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Playing Games 💻</li>
+                        <li>Eating 🍕 </li>
+                        <li>Appreciating Nature 🏔️</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Task Management</li>
+                        <li>Organizations</li>
+                        <li>Neat Work</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Unorganized Things</li>
+                        <li>Slow Internet</li>
+                        <li>Liars</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Games</h3>
+                    <ul>
+                        <li>Valorant</li>
+                        <li>League of Legends</li>
+                        <li>Stardew Valley</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">Figma</span>
+                    <span class="skill-badge">Canva</span>
+                    <span class="skill-badge">Photoshop</span>
+                    <span class="skill-badge">Illustrator</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="images/project_1.png"
+                            alt="Until Dawn Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Until Dawn Local Website</h3>
+                        <p>Until Dawn is a cinematic 18th birthday event website featuring an elegant purple theme, 
+                            refined typography, and a visual storytelling layout. It highlights event details, 
+                            personal milestones, and photo galleries in a clean, immersive design. This project 
+                            was developed for our Website Development course during the first semester of our second year.</p>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="images/project_2.png"
+                            alt="Publication Materials in CITE Organization">
+                    </div>
+                    <div class="project-info">
+                        <h3>Publication Materials in CITE Organization</h3>
+                        <p>Designed and produced digital and print publication materials, including social media graphics, 
+                            announcements, and promotional visuals. Focused on creating engaging, brand-consistent designs 
+                            that effectively communicate the commission’s initiatives, events, and technology-driven advocacies.</p>
+                        <a href="https://www.facebook.com/profile.php?id=61564071784342" class="project-link">Visit FB Page →</a>
+                    </div>
+                </div>
+                    <div class="project-image">
+                        <img src="images/project_3.png"
+                            alt="PATHFIT Simple Advocacy Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>PATHFIT Simple Advocacy Website</h3>
+                        <p>A personal wellness and advocacy website that promotes a holistic approach to health, blending physical 
+                            fitness with mental well-being. Built to share insights, fitness tips, and reflections on the Physical 
+                            Activity Towards Health and Fitness (PATHFit) course experience, the site highlights accessible movement 
+                            habits, balanced nutrition, and self-care practices. This project was developed as part of our Website 
+                            Development course in the first semester of second year.</p>
+                        <a href="https://vercel.com/elaijah-amans-projects/pathfit" class="project-link">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Talk with me</h2>
+            <div class="contact-card glass">
+                <p>I’m open to discussing graphic design projects, branding concepts, creative collaborations, and project management opportunities.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Elaijah. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
