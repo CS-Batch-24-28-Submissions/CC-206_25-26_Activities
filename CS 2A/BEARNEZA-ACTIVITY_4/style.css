@@ -146,7 +146,7 @@ footer {
 /* Media Queries for Desktop */
 @media (min-width: 768px) {
     .work-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
     
     .hero {
@@ -156,11 +156,11 @@ footer {
 
 @media (min-width: 1024px) {
     .work-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
-/* Layout for About Section */
+
 .about-flex {
     display: flex;
     flex-direction: column;
@@ -170,35 +170,34 @@ footer {
 .profile-image img {
     width: 100%;
     max-width: 400px;
-    filter: grayscale(100%); /* Keeps it monochromatic */
+    filter: grayscale(100%); 
     transition: var(--transition);
 }
 
 .profile-image img:hover {
-    filter: grayscale(0%); /* Optional: pops to color on hover */
+    filter: grayscale(0%);
 }
 
 /* Work Media Styling */
 .work-item {
     position: relative;
-    overflow: hidden; /* Clips the image/video to the card */
-    padding: 0; /* Remove padding to let media fill the box */
+    overflow: hidden; 
+    padding: 0; 
 }
 
 .work-media {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image fills the area without stretching */
+    object-fit: cover; 
     filter: grayscale(100%) brightness(0.7);
     transition: var(--transition);
 }
 
 .work-item:hover .work-media {
     filter: grayscale(0%) brightness(1);
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05); 
 }
 
-/* Ensure text stays visible over the image */
 .work-info {
     position: absolute;
     bottom: 20px;
