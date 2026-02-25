@@ -35,3 +35,51 @@ nav a{
     font-size: 36px;
     margin-left: 100px;
 }
+
+/* Landing Section */
+.landing-section{
+    position: relative;
+    overflow: hidden;
+    display: flex;   
+    height: 75vh;
+}
+.fade-divider-top{
+    height: 20px;
+    background: linear-gradient(
+        to bottom,
+        #2a2a2a,
+        transparent
+    );
+}
+.fade-divider-bottom{
+    height: 20px;
+    background: linear-gradient(
+        to top,
+        #2a2a2a,
+        transparent
+    );
+}
+.landing-text{
+    display: flex;
+    width: 50%;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+}
+.landing-text-wrapper{
+    width: 450px;
+    font-size: 46px;
+    font-family: var(--primary-font);
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.landing-img{
+    width: 50%;
+    height: 100%;
+}
+.landing-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
