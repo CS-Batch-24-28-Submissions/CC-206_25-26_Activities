@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurish Pauleen Hitalia | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jurish<span>.</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="IMG_6022 2.JPG" alt="Jurish Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Jurish Pauleen Hitalia</span></h1>
+                <p>2nd-Year BSCS Student @ WVSU CICT | Associate Editor at ICON Publication | </p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Tech Journalism 📝</li>
+                        <li>Block Puzzles 🧩</li>
+                        <li>Curating Playlists 🎧</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Grungy & Atmospheric Rock (Arctic Monkeys, Deftones)</li>
+                        <li>NIKI's Music</li>
+                        <li>Philippine History</li>
+                        <li>Robotics & Arduino</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Uncommented Code</li>
+                        <li>Major Network Outages</li>
+                        <li>Slow Internet</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical & Soft Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">NFC/RFID Tech</span>
+                    <span class="skill-badge">Arduino</span>
+                    <span class="skill-badge">Technical Writing</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=800&auto=format&fit=crop"
+                            alt="RFID Library System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Automated RFID/NFC Library Entry System</h3>
+                        <p>An academic group project developing a modernized, optional implementation entry system for the WVSU University Learning Resource Center (ULRC).</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I'm always open to talking about new projects, creative ideas or opportunities to collaborate.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jurish Pauleen Hitalia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
