@@ -2,134 +2,267 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Student Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ickor — Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<!-- Font Awesome for social icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Devicons for tech stack -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">Student<span> Portfolio</span></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#personal">About Me</a></li>
-                <li><a href="#professional">Professional</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="profile-container">
-                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=256&h=256&auto=format&fit=crop"
-                        alt="Student Profile" class="profile-img">
-                </div>
-                <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
-                <p>College Student | Aspiring [Your Major/Goal]</p>
-                <div class="hero-buttons">
-                    <a href="#professional" class="btn primary">View Work</a>
-                    <a href="#personal" class="btn secondary">Know Me Better</a>
-                </div>
-            </div>
-        </section>
+	<!-- ── NAVIGATION ── -->
+	<nav id="navbar">
+		<div class="nav-inner">
+			<div class="nav-logo">ickor<span>.dev</span></div>
+			<ul class="nav-links" id="nav-links">
+				<li><a href="#about" class="nav-link">About</a></li>
+				<li><a href="#tech" class="nav-link">Tech Stack</a></li>
+				<li><a href="#experience" class="nav-link">Experience</a></li>
+				<li><a href="#gamedev" class="nav-link">Projects</a></li>
+				<li><a href="#cscontent" class="nav-link">CS Projects</a></li>
+			</ul>
+			<button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+		<!-- Mobile dropdown -->
+		<div class="mobile-menu" id="mobile-menu">
+			<a href="#about" class="mobile-link">About</a>
+			<a href="#experience" class="mobile-link">Experience</a>
+			<a href="#tech" class="mobile-link">Tech Stack</a>
+			<a href="#gamedev" class="mobile-link">Projects</a>
+			<a href="#cscontent" class="mobile-link">CS Projects</a>
+		</div>
+	</nav>
 
-        <section id="personal" class="section">
-            <h2 class="section-title">Personal Side</h2>
-            <div class="personal-grid">
-                <div class="card glass">
-                    <h3>Hobbies</h3>
-                    <ul>
-                        <li>Photography 📸</li>
-                        <li>Coding 💻</li>
-                        <li>Hiking 🏔️</li>
-                    </ul>
-                </div>
-                <div class="card glass">
-                    <h3>Likes</h3>
-                    <ul>
-                        <li>Coffee & Deep Tech Chats</li>
-                        <li>Open Source Contributions</li>
-                        <li>Sci-Fi Movies</li>
-                    </ul>
-                </div>
-                <div class="card glass">
-                    <h3>Dislikes</h3>
-                    <ul>
-                        <li>Uncommented Code</li>
-                        <li>Slow Internet</li>
-                        <li>Waking up too early</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+	<!-- ── HERO ── -->
+	<section class="hero" id="home">
+		<div class="hero-inner">
+			<!--Hero Image-->
+			<div class="hero-image">
+				<img src="assets/hero-pic.jpg" alt="Ickor's Hero Image">
+			</div>
+			<!-- decorative vertical line -->
+			<div class="hero-line" aria-hidden="true">
+				<div class="hero-line-dot"></div>
+				<div class="hero-line-bar"></div>
+			</div>
 
-        <section id="professional" class="section">
-            <h2 class="section-title">Professional Journey</h2>
+			<div class="hero-text">
+				<h1>Hi, I'm <span class="accent">Ickor</span></h1>
+				<p class="typewriter-wrap">
+					I like doing <span class="accent typewriter" id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+				</p>
+				<p class="hero-desc">
+					Work In Progress Portfolio Site showcasing my game development projects, CS coursework, and experience as a student.
+				</p>
+				<div class="social-icons">
+					<a class="icon-link" href="https://github.com/ickorwen" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+						<i class="fa-brands fa-github"></i>
+					</a>
+					<a class="icon-link" href="https://www.linkedin.com/in/kenzi-chua/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+					<a class="icon-link" href="mailto:chua.raignekenzi@gmail.com" aria-label="Email">
+						<i class="fa-solid fa-envelope"></i>
+					</a>
+					<a class="icon-link" href="https://ickor.itch.io" target="_blank" rel="noopener noreferrer" aria-label="Itch.io">
+						<i class="fa-brands fa-itch-io"></i>
+					</a>
+					<a class="icon-link" href="https://www.facebook.com/rkenzichua/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+				</div>
+				<a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">
+					Resume <span>›</span>
+				</a>
+			</div>
+		</div>
+	</section>
 
-            <div class="skills-container">
-                <h3>Technical Skills</h3>
-                <div class="skills-grid">
-                    <span class="skill-badge">HTML/CSS</span>
-                    <span class="skill-badge">JavaScript</span>
-                    <span class="skill-badge">Python</span>
-                    <span class="skill-badge">SQL</span>
-                    <span class="skill-badge">Git</span>
-                </div>
-            </div>
+	<main>
 
-            <div class="projects-grid">
-                <div class="project-card glass">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=800&auto=format&fit=crop"
-                            alt="Project One">
-                    </div>
-                    <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A simple web application to manage student tasks and schedules.</p>
-                        <a href="#" class="project-link">Learn More →</a>
-                    </div>
-                </div>
-                <div class="project-card glass">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bbbda536ad37?q=80&w=800&auto=format&fit=crop"
-                            alt="Project Two">
-                    </div>
-                    <div class="project-info">
-                        <h3>Project Two</h3>
-                        <p>A data analysis tool built with Python to visualize neighborhood stats.</p>
-                        <a href="#" class="project-link">Learn More →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- ── ABOUT ── -->
+		<section class="card-section reveal" id="about">
+			<h2>About Me</h2>
+			<div class="section-content">
+				<p>
+					Hi! I'm Ickor, a 19 year old CS student passionate about game development, creative coding, and
+					interactive technology. I like making things that are fun and cool. Always learning,
+					always experimenting. Website Work In Progress.
+				</p>
+			</div>
+		</section>
 
-        <section id="contact" class="section">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-card glass">
-                <p>I'm always open to talking about new projects, creative ideas or opportunities to be part of your
-                    visions.</p>
-                <form id="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+		<!-- ── TECH STACK ── -->
+		<section class="card-section reveal" id="tech">
+			<h2>Tech Stack</h2>
+			<div class="section-content">
+			<div class="tech-grid">
+				<div class="tech-item" title="TypeScript" style="--tech-color:#3178c6">
+					<i class="devicon-typescript-plain tech-icon-svg" style="color:#3178c6"></i>
+					<span>TypeScript</span>
+				</div>
+				<div class="tech-item" title="React" style="--tech-color:#61dafb">
+					<i class="devicon-react-original tech-icon-svg" style="color:#61dafb"></i>
+					<span>React</span>
+				</div>
+				<div class="tech-item" title="Godot" style="--tech-color:#478cbf">
+					<i class="devicon-godot-plain tech-icon-svg" style="color:#478cbf"></i>
+					<span>Godot</span>
+				</div>
+				<div class="tech-item" title="Blender" style="--tech-color:#f5792a">
+					<i class="devicon-blender-original tech-icon-svg" style="color:#f5792a"></i>
+					<span>Blender</span>
+				</div>
+				<div class="tech-item" title="C++" style="--tech-color:#00599c">
+					<i class="devicon-cplusplus-plain tech-icon-svg" style="color:#00599c"></i>
+					<span>C++</span>
+				</div>
+				<div class="tech-item" title="Python" style="--tech-color:#ffd343">
+					<i class="devicon-python-plain tech-icon-svg" style="color:#ffd343"></i>
+					<span>Python</span>
+				</div>
+			</div>
+			</div>
+		</section>
 
-    <footer>
-        <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
-    </footer>
+		<!-- ── EXPERIENCE ── -->
+		<section class="card-section reveal" id="experience">
+			<h2>Experience</h2>
+			<div class="section-content">
+			<div class="timeline">
+				<div class="timeline-line"></div>
 
-    <script src="script.js"></script>
+				<div class="timeline-entry">
+					<div class="timeline-marker"></div>
+					<div class="exp-card">
+						<h3>Student, Computer Science</h3>
+						<p class="exp-org">West Visayas State University</p>
+						<span class="exp-date">2024 – Present</span>
+					</div>
+				</div>
+
+				<div class="timeline-entry">
+					<div class="timeline-marker"></div>
+					<div class="exp-card">
+						<h3>Game Jam Participant</h3>
+						<p class="exp-org">Various game development competitions and events</p>
+						<span class="exp-date">2025 – Present</span>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<!-- ── GAMEDEV PROJECTS ── -->
+		<section class="card-section reveal" id="gamedev">
+			<h2>GameDev Projects</h2>
+			<div class="section-content">
+			<div class="projects-grid">
+
+				<div class="gamedev-card">
+					<div class="gamedev-thumb">
+						<img src="https://img.itch.zone/aW1nLzIyNTIwNzIxLnBuZw==/315x250%23c/8eR4hW.png" alt="Testius Gamius thumbnail"
+							onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+						<div class="thumb-placeholder" style="display:none">🎮</div>
+					</div>
+					<h3>Loops For Freedom</h3>
+					<p>Draw imaginary loops of wind to guide the paper airplane through Paper World and to its freedom! Careful though, one wrong turn and its body might deform. Made for GMTK Game Jam 2025.</p>
+					<a href="https://studio-sinokayo.itch.io/loops-for-freedom" target="_blank" rel="noopener noreferrer"
+						class="itch-link">
+						<img src="https://static.itch.io/images/badge-color.svg" alt="Available on itch.io"
+							onerror="this.outerHTML='<span class=\'itch-text\'>Play on itch.io ↗</span>'">
+					</a>
+				</div>
+
+				<div class="gamedev-card">
+					<div class="gamedev-thumb">
+						<img src="assets/calcuthumb.png" alt="Testius Gamius thumbnail"
+							onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+						<div class="thumb-placeholder" style="display:none">🎮</div>
+					</div>
+					<h3>Calcuquest</h3>
+					<p>Discontinued Game made for Tech For All - Game On! Game Jam 2025. Won Best in Art!</p>
+					<a href="" target="_blank" rel="noopener noreferrer"
+						class="itch-link">
+						<img src="https://static.itch.io/images/badge-color.svg" alt="Available on itch.io"
+							onerror="this.outerHTML='<span class=\'itch-text\'>Play on itch.io ↗</span>'">
+					</a>
+				</div>
+			
+
+			</div>
+			</div>
+		</section>
+
+		<!-- ── CS PROJECTS ── -->
+		<section class="card-section reveal" id="cscontent">
+			<h2>CS Projects</h2>
+			<div class="section-content">
+			<p class="section-desc">
+				Here are some projects I developed during my Computer Science coursework, showcasing various
+				programming concepts and problem-solving approaches.
+			</p>
+			<div class="cs-grid">
+
+				<a class="cs-card" href="https://github.com/ickorwen/Hospital-Registration-System" target="_blank" rel="noopener noreferrer">
+					<div class="cs-card-top">
+						<span class="cs-type">System Application</span>
+						<i class="fa-brands fa-github cs-gh-icon"></i>
+					</div>
+					<h3>Hospital Registration System</h3>
+					<p>A comprehensive terminal-based hospital registration system built for managing patient data,
+						appointments, and medical records efficiently.</p>
+					<div class="cs-tags">
+						<span>Terminal</span><span>Data Management</span><span>System Design</span>
+					</div>
+				</a>
+
+				<a class="cs-card" href="https://github.com/ickorwen/Architecture-of-a-Microcomputer" target="_blank" rel="noopener noreferrer">
+					<div class="cs-card-top">
+						<span class="cs-type">Educational Website</span>
+						<i class="fa-brands fa-github cs-gh-icon"></i>
+					</div>
+					<h3>Architecture of a Microcomputer</h3>
+					<p>An interactive educational website that explains the fundamental architecture and components of
+						microcomputers in an engaging way.</p>
+					<div class="cs-tags">
+						<span>Web Development</span><span>Educational Content</span><span>Computer Architecture</span>
+					</div>
+				</a>
+
+				<a class="cs-card" href="https://github.com/ickorwen/finals2ndsem" target="_blank" rel="noopener noreferrer">
+					<div class="cs-card-top">
+						<span class="cs-type">Productivity Tool</span>
+						<i class="fa-brands fa-github cs-gh-icon"></i>
+					</div>
+					<h3>Interactive Calendar Todo App</h3>
+					<p>A feature-rich terminal-based calendar and todo application with interactive functionality for
+						task management and scheduling.</p>
+					<div class="cs-tags">
+						<span>Terminal</span><span>Calendar System</span><span>Task Management</span>
+					</div>
+				</a>
+
+			</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>&copy; <span id="year"></span> Raigne Kenzi Chua. All rights reserved.</p>
+	</footer>
+
+	<script src="script.js"></script>
 </body>
 
 </html>
