@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="https://scontent.fceb8-1.fna.fbcdn.net/v/t39.30808-6/488054048_3986806764927144_810225900682133768_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeGuKc3IeDGWgYnbMfcd2wPgn_9QKXbOeWWf_1Apds55ZcUDAh3f2We749FvUBoWyInYKkauL-zC_zl3JibXA6LX&_nc_ohc=QO9iZp7qg84Q7kNvwE03hfV&_nc_oc=AdntOt0e04C7TBl9tEd0-NZujs0d1podQw9gb3DhanFyNkTqrWFJEGS4C7oS5Y6FtRM&_nc_zt=23&_nc_ht=scontent.fceb8-1.fna&_nc_gid=WbcrvYvZx2NH5K43QWQQgQ&oh=00_Afsss9at5yl_n-QeZB4tr2T-Luj92uIYcjYQPq5Kd6Ev1Q&oe=69A4CA70"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">David Andre Solomon</span></h1>
+                <p>College Student | Aspiring Software engineer</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Gaming 🎮</li>
+                        <li>Coding 💻</li>
+                        <li>Skating 🛹</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Color black</li>
+                        <li>Food</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Bad hygiene</li>
+                        <li>Drinking</li>
+                        <li>Waking up too early</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">C#</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="LL.png"
+                            alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A wed application to manage a cafe.</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I'm always open to talking about new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> David Andre Solomon. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
