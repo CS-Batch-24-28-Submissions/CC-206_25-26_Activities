@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact-info">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="images/1666746737326.JPG"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Shalyn Andicoy</span></h1>
+                <p>College Student | Aspiring Cybersecurity Professional</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Playing Volleyball 🏐</li>
+                        <li>Dancing 💃🏻</li>
+                        <li>Scrolling on my phone 📱</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Relaxing in nature 🌿</li>
+                        <li>Hanging out with friends 𐀪𐀪</li>
+                        <li>Watching K-dramas 🎬</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Messy desks 🗂️</li>
+                        <li>Slow Internet 🐌</li>
+                        <li>Waking up too early ⏰</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">Java</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="images/Screenshot (374).png"
+                            alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>Hospital Management System</h3>
+                        <p>A school project Hospital Management System built to streamline healthcare operations by managing patient records and facility data with efficiency and accuracy.</p>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="images/594903400_733209525911988_6510801570130064163_n.png"
+                            alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>Tabi-Tabi Fund</h3>
+                        <p>A web-based Personal Finance Tracker that helps users monitor income, track expenses, set budgets, and achieve savings goals through a simple interface.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-info" class="section">
+            <h2 class="section-title">Contact Info</h2>
+            <div class="contact-info glass">
+                <p>Let’s connect! You can reach me directly through my socials:</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/shalyn.andicoy" target="_blank" class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="mailto:shalyn.andicoy@wvsu.edu.ph" class="social-btn email">
+                        <i class="fas fa-envelope"></i> shalyn.andicoy@wvsu.edu.ph
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Shalyn Andicoy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
