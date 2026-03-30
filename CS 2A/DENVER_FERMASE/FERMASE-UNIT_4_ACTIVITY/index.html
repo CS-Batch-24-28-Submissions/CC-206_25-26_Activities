@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="https://cdn.discordapp.com/attachments/1430927649768865935/1476551206963773461/159e54e7-ef7b-4e4b-87fd-413963511ce8.png?ex=69a188f8&is=69a03778&hm=f36840e9fd408ac31f9845a0f826ed82b138852d360c1f5fb37f9681bf70e78c"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">DENVER FERMASE</span></h1>
+                <p>BS Computer Science Student</p> 
+                <p>"Diving into tech, design, and the digital world. This portfolio started as a school project, but it’s becoming the home for everything I’m learning and building along the way. 🩷"
+</p>
+                <p> This portfolio started as a school project to showcase my progress, but it’s quickly becoming my favorite space to experiment with new skills, from YouTube tutorials to hands-on practice. I’m still learning the ropes, so I’d love to hear your feedback or beginner tips whether you have a cool tutorial to share or just want to chat about tech, feel free to reach out! 🩷</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Writing (Poems, letters, Essays) ✍️</li>
+                        <li>Photography 📸</li>
+                        <li>Singing and Dancing 🎤💃</li>
+                        <li>Volleyball 🏐</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Heart to Heart talks with someone that im comfortable with</li>
+                        <li>Listening to Music</li>
+                        <li>Going to Church</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Traffic</li>
+                        <li>Slow Internet</li>
+                        <li>Being Lied by Someone</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">PHP</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Java</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://cdn.discordapp.com/attachments/1430586945221955636/1476518172822601839/image.png?ex=69a16a34&is=69a018b4&hm=a499c97410ad7171c06fbead0d622c4c0918a909b44569fa32db1326c1df8367"
+                            alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>The proposed system is entitled PaviaOne: A One-Stop School Management Platform, which will be developed and implemented for Pavia National High School located in Pavia, Iloilo, Philippines.</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://cdn.discordapp.com/attachments/1430927649768865935/1476552131610939504/image.png?ex=69a189d5&is=69a03855&hm=9711b1eb408fa2bbca91752bab3c09006739cb27c02a31be17e912e089a6f46b"
+                            alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>Gigsta is a streamlined digital local marketplace that treats freelance services like products, allowing users to hire experts for tasks ranging from graphic design to coding with ease.</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>Exploring the world of Technology. This portfolio is my personal project playground I'm a beginner on a mission to learn, build, and improve every day.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Denver Fermase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

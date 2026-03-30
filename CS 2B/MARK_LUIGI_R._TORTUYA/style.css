@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #111122, #1a1a2e); 
+    color: #e0e0e0;       
+    background: url('https://wallpapers.com/images/hd/neon-red-and-black-fractal-circle-qottbg8j4339tn0j.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #111122, #1a1a2e); 
+    border-bottom: 2px solid #ff0000;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+nav div  { 
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 1.4em; 
+    font-weight: 700; 
+    color: #fff; 
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a { 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1em; 
+    color: #fff; 
+    text-decoration: none; 
+    text-shadow: 0 0 8px #ff0000; 
+}
+
+nav ul li a:hover {
+    color: #ff8000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+#home { 
+    height: 100vh;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    background: none; 
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff8000;
+    box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+}
+
+.highlight {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+section {
+    background-image: url('https://media.baamboozle.com/uploads/images/68331/1662721871_146227_url.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%; 
+    margin: 0;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 10px;
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+    transition: transform 0.3s ease;
+}
+
+.intro-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    margin-bottom: 30px; 
+} 
+
+.intro-text { 
+    color: #ccc; 
+    font-size: 1.1em; 
+    line-height: 1.6; 
+    text-align: left; 
+} 
+    
+.personal-img { 
+    width: 300px; 
+    height: 350px; 
+    border-radius: 10%; 
+    border: 3px solid #ff0000; 
+    box-shadow: 0 0 10px #ff0000; 
+}
+
+.professional-img {
+    justify-content: center;
+    width: 600px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 10%;
+    border: 3px solid #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.professional-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.personal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(20, 20, 20, 0.85); 
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ff0000; 
+    box-shadow: 0 0 10px #ff0000;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+.card ul li {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+section p, section li {
+    color: #ccc;
+    line-height: 2;
+    fon
+}
+
+footer {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+    border-top: 2px solid #ff0000;
+    background: linear-gradient(90deg, #111122, #1a1a2e); 
+    box-shadow: 0 -2px 15px #ff0000;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 10px;
+}
+

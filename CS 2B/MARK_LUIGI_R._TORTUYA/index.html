@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+
+<!-- Styles and Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- ================= HEADER ================= -->
+    <header>
+        <nav>
+    <!-- Logo -->
+            <div class="logo">Student<span class="highlight"> Portfolio</span></div>
+    <!-- Navigation Links -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#personal">About Me</a></li>
+            <li><a href="#professional">Professional</a></li>
+        </ul>
+        </nav>
+    </header>
+
+<!-- ================= MAIN CONTENT ================= -->
+    <main>
+    <!-- ===== Home Section ===== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+        <!-- Profile Image -->
+        <img src="MLRT.jpg" alt="Profile Image" class="profile-img">
+        <!-- Intro Text -->
+            <h1>Hi, I'm <span class="highlight">MARK</span></h1>
+                <p>A BSCS College Student</p>
+        <!-- Buttons -->
+            <div class="hero-buttons">
+                <a href="#professional" class="btn primary">View Work</a>
+                <a href="#personal" class="btn secondary">Know Me Better</a>
+            </div>
+        </div>
+    </section>
+
+<!-- ===== Personal Section ===== -->
+    <section id="personal" class="section">
+        <h2 class="section-title">Personal<span class="highlight"> Side</span></h2>
+
+    <!-- Image n Text -->
+        <div class="intro-container"> 
+            <img src="MLRT.jpg" alt="Personal Image" class="personal-img"> 
+                <p class="intro-text">
+                I am a student at West Visayas State University. 
+                I am currently studying Computer Science and now, I am learning app development. 
+                This website serves as a submission for Activity 4 of the same subject. 
+                </p> 
+        </div>   
+
+    <!-- Box -->
+        <div class="personal-grid">
+            <div class="card glass">
+                <h3>Hobbies</h3>
+            <ul>
+                <li>Photography 📸</li>
+                <li>Riding 🏍</li>
+                <li>Gaming 🎮</li>
+            </ul>
+            </div>
+
+            <div class="card glass">
+                <h3>Likes</h3>
+             <ul>
+                <li>Coca-cola 🥤</li>
+                <li>Chocolate 🍫</li>
+                <li>Music 🎵</li>
+            </ul>
+            </div>
+
+            <div class="card glass">
+                <h3>Dislikes</h3>
+            <ul>
+                <li>Heat 🥵</li>
+                <li>No Internet 🚫</li>
+                <li>Waking up too early</li>
+            </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- ===== Professional Section ===== -->
+    <section id="professional" class="section">
+        <h2 class="section-title">Professional <span class="highlight">Journey</span></h2>
+
+    <!-- Image -->
+        <div class="intro-container">
+            <img src="https://images.stockcake.com/public/d/c/4/dc43867d-5a5b-49e4-82e7-3eb135eb8dea_large/coding-classroom-activity-stockcake.jpg" 
+             alt="Professional Image" class="professional-img">
+        </div>
+
+      <!-- Box -->
+        <div class="professional-grid">
+            <div class="card glass">
+                <h3>Technical <span class="highlight">Skills</span></h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+        </div>
+
+        <div class="card glass">
+            <h3>Project <span class="highlight">One</span></h3>
+                <p>A C++ based employee record system.</p>
+        </div>
+
+        <div class="card glass">
+            <h3>Project <span class="highlight">Two</span></h3>
+                <p>A Java based vehicle rental system.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+        <p>&copy; <span id="year"></span> MLRT. All rights reserved.</p>
+            <div class="contact-icons"></div>
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script src="script.js"></script>
+</body>
+</html>

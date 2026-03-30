@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span>Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#" id="contactBtn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                
+                <div>
+                    <h1>Hi, I'm <span class="highlight">Althea Shane Panes</span></h1>
+                    <p>College Student | Aspiring Full Stack Developer</p>
+                </div>
+
+                <div class="profile-container">
+                    <img src="img/profile_pic.jpg" alt="Student Profile" class="profile-img">
+
+                </div>
+            </div>
+        </section>
+        
+        <!--Personal Section-->
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                
+                <div class="personal-card">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Senior High School: Passi National High School</li>
+                        <li>Currently: 2nd Year BS Computer Science - West Visayas State University</li>
+                    </ul>
+                </div>
+                
+                <div class="personal-card">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Motorcyling</li>
+                        <li>Exploring Places</li>
+                        <li>Watching Series</li>
+                    </ul>
+                </div>
+
+                <div class="personal-card">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Matcha & Dark Chocolates</li>
+                        <li>Sweet Corn</li>
+                        <li>Continuous Learning</li>
+                    </ul>
+                </div>
+            </div>
+        
+
+        </section>
+
+        <!--Professional Section-->
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">Java</span>
+                </div>
+            </div>
+
+            <div class="project-container">
+                
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="img/hms.png" alt="Hospital Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Hospital Management System</h3>
+                        <p>The Hospital Management System is a command-line application 
+                            which allows allows users to take on roles such as 
+                            administrators, doctors, receptionists, and pharmacists to manage
+                            patient records, appointments, staff accounts, and pharmacy inventory.</p>
+                    </div>
+                </div>
+            
+
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="img/tabi.png" alt="Tav">
+                    </div>
+                    <div class="project-info">
+                        <h3>Tabi Tabi po - A Financial Tracker</h3>
+                        <h4>Role: Frontend Developer - Team Project</h4>
+                        <p>This project is a web-based Personal Finance Tracker designed to assist users in
+                        efficiently managing their income, expenses, budgets, and savings goals.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+        
+        
+    <!--Overlay-->
+    <div id="overlay" class="overlay"></div>
+
+    <!--Contact Sidebar-->
+    <div id="contactSidebar" class="sidebar">
+        <button id="closeBtn" class="closeBtn"></button>
+        <h2>Get in Touch</h2>
+
+        <p><strong>School Email:</strong><br>altheashane.panes@wvsu.edu.ph</p>
+        <p><strong>Personal Email:</strong><br>altheashanepanes@gmail.com</p>
+        <p><strong>Contact Number:</strong><br>09930693716</p>
+        <p><strong>Address:</strong><br>San Enrique, Iloilo</p>     
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
