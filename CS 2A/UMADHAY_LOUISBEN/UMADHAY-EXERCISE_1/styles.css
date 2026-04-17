@@ -1,0 +1,57 @@
+* {
+    margin: 10px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background {
+    background-image: url(backdrop.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    size: 36px;
+}
+
+.profilePicture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.aboutMeContainer {
+    margin-top: 60px;
+    font-size: 42px;
+    padding: 20px;
+    background-color: rgb(192, 221, 211);
+    border-radius: 50px;
+    font-weight: bold, italic;
+    box-shadow: 0 0 10px #000000;
+}
+
+.aboutMeInfo {
+    font-size: 24px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+table.aboutMeInfo tr:nth-child(odd) {
+  background-color: #e6e6e6;
+  margin: 5px;
+}
+
+/* Target the even-numbered rows */
+table.aboutMeInfo tr:nth-child(even) {
+  background-color: aliceblue; /* White for even rows */
+}
+
+/* Optional: Ensure cells inherit the row background color */
+table.aboutMeInfo td {
+  background-color: inherit;
+}

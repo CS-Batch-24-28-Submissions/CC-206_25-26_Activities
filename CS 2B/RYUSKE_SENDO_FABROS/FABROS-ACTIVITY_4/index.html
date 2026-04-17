@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="https://images-cdn.ubuy.com.ph/68aa563114915232bf002ddd-ikea-djungelskog-orangutan-soft-toy.jpg"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Yuske</span></h1>
+                <p>BYLO's Developer 2</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Eating 😋</li>
+                        <li>Coding 💻</li>
+                        <li>Gundams 🤖</li>
+                        <li>Gaming 🎮</li>
+                        <li>Watching Films 🎞️</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Mountain Dew</li>
+                        <li>Coffee</li>
+                        <li>Series & Movies</li>
+                        <li>My Boss Dev 1</li>
+                        <li>Cold Weather</li>
+                        <li>Rain</li>
+                                                    
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>My Sister</li>
+                        <li>Hot Weather</li>
+                        <li>Stressful Lifestyle</li>
+                        <li>Traffic</li>
+                        <li>Backend</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">🌐 HTML / CSS / Tailwind</span>
+                    <span class="skill-badge">⚛️ React & Next.js</span>
+                    <span class="skill-badge">🐍 Python / Django / Flask</span>
+                    <span class="skill-badge">🗄️ MySQL / Supabase / SQLite</span>
+                    <span class="skill-badge">🐘 PHP / XAMPP</span>
+                    <span class="skill-badge">🚀 Flutter & Dart</span>
+                    <span class="skill-badge">🐋 Docker & Infrastructure</span>
+                    <span class="skill-badge">🔄 PowerSync</span>
+                    <span class="skill-badge">🌿 Git & Version Control</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="assets/bylo.png"
+                            alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>BYLO</h3>
+                        <p>Stands for "Buy Low By Locals," is a peer-to-peer marketplace designed for buying, selling, and bidding on both secondhand and original items.</p>
+                        <a target="_blank" href="https://bylo-one.vercel.app" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="assets/reclaim.png"
+                            alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>Re:Claim</h3>
+                        <p>Web-based system designed to centralize the reporting, tracking, and recovery of lost and found items for students at West Visayas State University (WVSU) Main Campus.</p>
+                        <a target="_blank" href="https://www.facebook.com/share/p/1GVQz7HaDE/" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I'm always open to talking about new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+                <form target="_blank" id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ryuske Sendo Fabros. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

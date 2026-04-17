@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My Digital Art Portfolio</h1>
+    <p>Digital Illustrations & Artwork</p>
+</header>
+
+<!-- Gallery -->
+<section class="gallery">
+
+    <div class="art">
+        <img src="images/digital1.jpg" alt="Artwork 1" onclick="openModal(this.src)">
+    </div>
+
+    <div class="art">
+        <img src="images/digital2.jpg" alt="Artwork 2" onclick="openModal(this.src)">
+    </div>
+
+    <div class="art">
+        <img src="images/digital3.jpg" alt="Artwork 3" onclick="openModal(this.src)">
+    </div>
+
+    <div class="art">
+        <img src="images/digital4.jpg" alt="Artwork 4" onclick="openModal(this.src)">
+    </div>
+
+    <div class="art">
+        <img src="images/digital5.jpg" alt="Artwork 5" onclick="openModal(this.src)">
+    </div>
+
+    <div class="art">
+        <img src="images/digital6.jpg" alt="Artwork 6" onclick="openModal(this.src)">
+    </div>
+
+</section>
+
+<div id="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<footer>
+    <p>© 2026 My Art Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
