@@ -15,15 +15,27 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'Welcome to the Home Screen!',
+              'Meet Bogart, my pet beagle!',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/profile');
-              },
-              child: const Text('Go to Profile'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 150,
+                  height: 150,
+                  color: Colors.grey,
+                  child: const Center(child: Text('Pet Picture')),
+                ),
+                const SizedBox(width: 20),
+                IconButton(
+                  icon: const Icon(Icons.volume_up),
+                  onPressed: () {
+                    // Placeholder for audio playback
+                  },
+                ),
+              ],
             ),
           ],
         ),
