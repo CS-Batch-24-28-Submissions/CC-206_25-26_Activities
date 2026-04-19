@@ -115,39 +115,65 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Personal Information',
+                    'Personal Information', // Personal Information Header
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 12),
                   _buildInfoRow(
+                    // Email Address
                     Icons.email,
                     Colors.purple,
                     'Email',
                     'business.alfonsodolutan@gmail.com',
                   ),
                   _buildInfoRow(
+                    // Address
                     Icons.location_on,
                     Colors.red,
                     'Address',
                     '26 Fajardo Extention, Jaro, Iloilo City',
                   ),
                   _buildInfoRow(
+                    // Favorite Movie
                     Icons.tv,
                     Colors.blue,
                     'Favorite Show',
                     'Pacific Rim',
                   ),
                   _buildInfoRow(
+                    // Favorite Song
                     Icons.music_note,
                     Colors.green,
                     'Favorite Song',
                     'Yo x Ti, Tu x Mi by Rosalia & Ozuna',
                   ),
                   _buildInfoRow(
+                    // Hobbies
                     Icons.favorite,
                     Colors.pink,
                     'Hobbies',
                     'Football, Sim-Racing, Working Out, Sleeping, Music',
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(height: 24),
+          Card(
+            margin: EdgeInsets.symmetric(horizontal: 12.0),
+            child: Padding(
+              padding: EdgeInsets.all(12.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Biography',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 12),
+                  Text(
+                    'Jose Alfonso "Fons" Dolutan is a 2nd year student currently studying Computer Science in West Visayas State University. His goal in the future is to work as a "Project Manager" or Cloud Engineer. He dreams to work for an overseas company like AWS or Google Cloud. He loves watching sports, cheering for FC Barcelona and McLaren Mastercard Formula One Team respectively. Currently, he is studying using AWS Skill Building to further improve his knowledge about the cloud.',
+                    style: TextStyle(fontSize: 14, height: 1.5),
                   ),
                 ],
               ),
