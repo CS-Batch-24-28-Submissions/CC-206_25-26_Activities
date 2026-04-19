@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -32,8 +33,10 @@ class HomeScreen extends StatelessWidget {
                 IconButton(
                   iconSize: 48,
                   icon: const Icon(Icons.volume_up),
-                  onPressed: () {
-                    // Placeholder for audio playback
+                  onPressed: () async{
+                    final player = AudioPlayer();
+
+                    await player.play(AssetSource('audio/beagle_sound.mp3'));
                   },
                 ),
               ],
