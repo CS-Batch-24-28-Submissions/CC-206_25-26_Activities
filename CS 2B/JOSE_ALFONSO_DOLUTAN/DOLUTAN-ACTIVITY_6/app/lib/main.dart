@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
+      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.blue)),
       home: const MyHomePage(title: 'Alfonso Dolutan Profile'),
     );
   }
@@ -35,7 +35,32 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Center(child: Text('Profile Page')),
+      body: const Align(
+        alignment: Alignment.topLeft,
+        child: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Row(
+            children: [
+              CircleAvatar(
+                radius: 50,
+                backgroundColor: Colors.grey,
+                child: Icon(Icons.person, size: 60, color: Colors.white),
+              ),
+              SizedBox(width: 20),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Jose Alfonso E. Dolutan',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
