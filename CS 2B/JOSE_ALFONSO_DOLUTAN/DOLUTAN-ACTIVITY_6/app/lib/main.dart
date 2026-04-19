@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.blue)),
-      home: const MyHomePage(title: 'Jose Alfonso Dolutan'), // full name on top 
+      home: const MyHomePage(title: 'Jose Alfonso Dolutan'), // full name on top
     );
   }
 }
@@ -27,7 +27,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Widget _buildInfoRow( // build a row using these attributes (reduces code duplication)
+  Widget _buildInfoRow(
+    // build a row using these attributes (reduces code duplication)
     IconData icon, // icon before data
     Color iconColor, // icon color
     String label, // what will be hardcoded
@@ -37,21 +38,21 @@ class _MyHomePageState extends State<MyHomePage> {
       children: [
         Row(
           children: [
-            Icon(icon, color: iconColor),
-            SizedBox(width: 16),
+            Icon(icon, color: iconColor, size: 20),
+            SizedBox(width: 12),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(label, style: TextStyle(fontSize: 12, color: Colors.grey)),
+                Text(label, style: TextStyle(fontSize: 10, color: Colors.grey)),
                 Text(
                   value,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
                 ),
               ],
             ),
           ],
         ),
-        SizedBox(height: 16),
+        SizedBox(height: 12),
       ],
     );
   }
@@ -72,7 +73,8 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar( // where I would put my profile picture
+                  CircleAvatar(
+                    // where I would put my profile picture
                     radius: 50,
                     backgroundColor: Colors.grey,
                     child: Icon(Icons.person, size: 60, color: Colors.white),
@@ -95,7 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.grey,
-                          fontStyle: FontStyle.italic, // italic to match resumes
+                          fontStyle:
+                              FontStyle.italic, // italic to match resumes
                         ),
                       ),
                     ],
@@ -105,22 +108,22 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Card(
-            margin: EdgeInsets.symmetric(horizontal: 16.0),
+            margin: EdgeInsets.symmetric(horizontal: 12.0),
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(12.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     'Personal Information',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 16),
+                  SizedBox(height: 12),
                   _buildInfoRow(
-                    Icons.cake,
-                    Colors.blue,
-                    'Birthday',
-                    'May 30, 2005',
+                    Icons.email,
+                    Colors.purple,
+                    'Email',
+                    'business.alfonsodolutan@gmail.com',
                   ),
                   _buildInfoRow(
                     Icons.location_on,
@@ -129,28 +132,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     '26 Fajardo Extention, Jaro, Iloilo City',
                   ),
                   _buildInfoRow(
-                    Icons.email,
-                    Colors.purple,
-                    'Email',
-                    'business.alfonsodolutan@gmail.com',
+                    Icons.tv,
+                    Colors.blue,
+                    'Favorite Show',
+                    'Pacific Rim',
                   ),
                   _buildInfoRow(
-                    Icons.phone,
+                    Icons.music_note,
                     Colors.green,
-                    'Phone Number',
-                    '+639470485638',
-                  ),
-                  _buildInfoRow(
-                    Icons.school,
-                    Colors.orange,
-                    'Education',
-                    'West Visayas State University: Main Campus',
-                  ),
-                  _buildInfoRow(
-                    Icons.book,
-                    Colors.teal,
-                    'Course',
-                    'Bachelor of Science in Computer Science: Major in AI',
+                    'Favorite Song',
+                    'Yo x Ti, Tu x Mi by Rosalia & Ozuna',
                   ),
                   _buildInfoRow(
                     Icons.favorite,
