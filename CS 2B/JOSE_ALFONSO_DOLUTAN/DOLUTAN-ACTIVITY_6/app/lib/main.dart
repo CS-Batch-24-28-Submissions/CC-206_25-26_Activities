@@ -76,8 +76,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   CircleAvatar(
                     // where I would put my profile picture
                     radius: 50,
+                    backgroundImage: AssetImage('assets/images/pfp.jpg'), // callout location
                     backgroundColor: Colors.grey,
-                    child: Icon(Icons.person, size: 60, color: Colors.white),
                   ),
                   SizedBox(width: 20),
                   Column(
@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 12),
-                  Text(
+                  Text( // add my biography here, just a simple one though
                     'Jose Alfonso "Fons" Dolutan is a 2nd year student currently studying Computer Science in West Visayas State University. His goal in the future is to work as a "Project Manager" or "Cloud Engineer". He dreams to work for an overseas company like AWS or Google Cloud. He loves watching sports, cheering for FC Barcelona and McLaren Mastercard Formula One Team respectively. Currently, he is studying using AWS Skill Builder to further improve his knowledge about the cloud.',
                     style: TextStyle(fontSize: 14, height: 1.5),
                   ),
