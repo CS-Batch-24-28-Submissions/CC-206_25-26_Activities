@@ -17,13 +17,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      // We still set our shell as the home page
       home: const MainScreen(),
     );
   }
 }
 
-// 1. Changed to a StatefulWidget to keep track of the selected page
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -32,16 +31,13 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  // 2. This variable remembers which page we are currently looking at (0 = Home, 1 = Profile)
-  int _selectedIndex = 0;
+  int _selectedIndex = 1; // this allows us to start at the Profile Screen first
 
-  // 3. This list holds the actual screens we want to show
-  final List<Widget> _pages = [
+  final List<Widget> _pages = [ // list of all pages in this application
     const HomeScreen(),
     const ProfileScreen(title: 'Jose Alfonso Dolutan'),
   ];
 
-  // 4. This function runs when you tap a menu item in the drawer
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index; // Update the active page
@@ -57,12 +53,10 @@ class _MainScreenState extends State<MainScreen> {
         title: const Text('Jose Alfonso Dolutan'),
       ),
       
-      // 5. Here is our new Drawer!
-      drawer: Drawer(
+      drawer: Drawer( // chose to use the drawer (because mainly its for a desktop appplication)
         child: ListView(
-          padding: EdgeInsets.zero, // Removes the weird gap at the top of the drawer
+          padding: EdgeInsets.zero, // found a fix online to remove the gap
           children: [
-            // The colored header at the top of the menu
             DrawerHeader(
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.inversePrimary,
@@ -75,15 +69,13 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
             ),
-            // Menu Item 1: Home/Bogart
-            ListTile(
+            ListTile( // Home Screen
               leading: const Icon(Icons.pets),
               title: const Text('Home'),
               selected: _selectedIndex == 0, // Highlights the item if it's currently active
               onTap: () => _onItemTapped(0), // Tells the app to load page 0
             ),
-            // Menu Item 2: Profile
-            ListTile(
+            ListTile( // Profile Screen
               leading: const Icon(Icons.person),
               title: const Text('Profile'),
               selected: _selectedIndex == 1,
@@ -93,8 +85,7 @@ class _MainScreenState extends State<MainScreen> {
         ),
       ),
       
-      // 6. The body simply displays whichever page matches our _selectedIndex
-      body: _pages[_selectedIndex],
+      body: _pages[_selectedIndex], 
     );
   }
 }

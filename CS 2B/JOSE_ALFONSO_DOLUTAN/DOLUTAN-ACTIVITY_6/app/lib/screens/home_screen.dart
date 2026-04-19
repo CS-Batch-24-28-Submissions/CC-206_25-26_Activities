@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audioplayers.dart'; // this page uses mp3 usage
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
-            'Meet Bogart, my pet beagle!', 
+            'Meet Bogart, my pet beagle!',  // a small header to introduce my pet
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 20),
@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/beagle.png', 
+                'assets/images/beagle.png', // Bogart's Image
                 width: 250,
                 height: 250,
                 fit: BoxFit.cover,
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                 icon: const Icon(Icons.volume_up),
                 onPressed: () async{
                   final player = AudioPlayer();
-                  await player.play(AssetSource('audio/beagle_sound.mp3'));
+                  await player.play(AssetSource('audio/beagle_sound.mp3')); // play this mp3 file onclick
                 },
               ),
             ],

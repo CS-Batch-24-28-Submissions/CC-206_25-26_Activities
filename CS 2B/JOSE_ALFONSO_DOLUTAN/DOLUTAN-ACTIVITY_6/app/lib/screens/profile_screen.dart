@@ -10,7 +10,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  Widget _buildInfoRow(
+  Widget _buildInfoRow( // helper function to reduce code duplication (in the personal info section)
     IconData icon, 
     Color iconColor, 
     String label, 
@@ -43,8 +43,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // 1. Removed Scaffold and AppBar
-    // 2. Added SingleChildScrollView so the user can scroll through your portfolio
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,12 +53,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  const CircleAvatar(
+                  const CircleAvatar( // placeholder or area to put my profile picture
                     radius: 50,
                     backgroundImage: AssetImage(
                       'assets/images/pfp.jpg',
                     ), 
-                    backgroundColor: Colors.grey,
+                    backgroundColor: Colors.grey, // this will display in case profile picture is still loading
                   ),
                   const SizedBox(width: 20),
                   Expanded(
@@ -69,7 +67,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Text(
-                          'Jose Alfonso E. Dolutan', 
+                          'Jose Alfonso E. Dolutan',  // full name beside the profile picture
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
@@ -77,7 +75,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ),
                         SizedBox(height: 8),
                         Text(
-                          'Aspiring Cloud Engineer || Project Manager', 
+                          'Aspiring Cloud Engineer || Project Manager', // aspiring job in italiced form
                           style: TextStyle(
                             fontSize: 16,
                             color: Colors.grey,
@@ -98,36 +96,36 @@ class _ProfileScreenState extends State<ProfileScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  const Text( // Personal Information Section
                     'Personal Information', 
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 12),
-                  _buildInfoRow(
+                  _buildInfoRow( // Email
                     Icons.email,
                     Colors.purple,
                     'Email',
                     'business.alfonsodolutan@gmail.com',
                   ),
-                  _buildInfoRow(
+                  _buildInfoRow( // Address
                     Icons.location_on,
                     Colors.red,
                     'Address',
                     '26 Fajardo Extention, Jaro, Iloilo City',
                   ),
-                  _buildInfoRow(
+                  _buildInfoRow( // Favorite Show
                     Icons.tv,
                     Colors.blue,
                     'Favorite Show',
                     'Pacific Rim',
                   ),
-                  _buildInfoRow(
+                  _buildInfoRow( // Favorite Song
                     Icons.music_note,
                     Colors.green,
                     'Favorite Song',
                     'Yo x Ti, Tu x Mi by Rosalia & Ozuna',
                   ),
-                  _buildInfoRow(
+                  _buildInfoRow( // Favorite Hobbies
                     Icons.favorite,
                     Colors.pink,
                     'Hobbies',
@@ -145,7 +143,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
-                  Text(
+                  Text( // Biography Section
                     'Biography',
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
