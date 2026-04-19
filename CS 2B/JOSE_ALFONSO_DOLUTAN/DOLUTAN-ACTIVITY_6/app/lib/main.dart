@@ -172,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   SizedBox(height: 12),
                   Text(
-                    'Jose Alfonso "Fons" Dolutan is a 2nd year student currently studying Computer Science in West Visayas State University. His goal in the future is to work as a "Project Manager" or Cloud Engineer. He dreams to work for an overseas company like AWS or Google Cloud. He loves watching sports, cheering for FC Barcelona and McLaren Mastercard Formula One Team respectively. Currently, he is studying using AWS Skill Building to further improve his knowledge about the cloud.',
+                    'Jose Alfonso "Fons" Dolutan is a 2nd year student currently studying Computer Science in West Visayas State University. His goal in the future is to work as a "Project Manager" or "Cloud Engineer". He dreams to work for an overseas company like AWS or Google Cloud. He loves watching sports, cheering for FC Barcelona and McLaren Mastercard Formula One Team respectively. Currently, he is studying using AWS Skill Builder to further improve his knowledge about the cloud.',
                     style: TextStyle(fontSize: 14, height: 1.5),
                   ),
                 ],
