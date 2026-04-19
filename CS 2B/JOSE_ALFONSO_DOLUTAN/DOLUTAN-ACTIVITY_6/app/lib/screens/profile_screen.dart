@@ -11,136 +11,123 @@ class ProfileScreen extends StatefulWidget {
 
 class _ProfileScreenState extends State<ProfileScreen> {
   Widget _buildInfoRow(
-    
-    // build a row using these attributes (reduces code duplication)
-    IconData icon, // icon before data
-    Color iconColor, // icon color
-    String label, // what will be hardcoded
-    String value, // int or string
+    IconData icon, 
+    Color iconColor, 
+    String label, 
+    String value, 
   ) {
     return Column(
       children: [
         Row(
           children: [
             Icon(icon, color: iconColor, size: 20),
-            SizedBox(width: 12),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(label, style: TextStyle(fontSize: 10, color: Colors.grey)),
-                Text(
-                  value,
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
-                ),
-              ],
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(label, style: const TextStyle(fontSize: 10, color: Colors.grey)),
+                  Text(
+                    value,
+                    style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
-        SizedBox(height: 12),
+        const SizedBox(height: 12),
       ],
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
-      body: Column(
+    // 1. Removed Scaffold and AppBar
+    // 2. Added SingleChildScrollView so the user can scroll through your portfolio
+    return SingleChildScrollView(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Align(
             alignment: Alignment.topLeft,
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(
-                    // where I would put my profile picture
+                  const CircleAvatar(
                     radius: 50,
                     backgroundImage: AssetImage(
                       'assets/images/pfp.jpg',
-                    ), // callout location
+                    ), 
                     backgroundColor: Colors.grey,
                   ),
-                  SizedBox(width: 20),
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Jose Alfonso E. Dolutan', // my full name beside the profile picture
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
+                  const SizedBox(width: 20),
+                  Expanded(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Text(
+                          'Jose Alfonso E. Dolutan', 
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      SizedBox(height: 8),
-                      Text(
-                        'Aspiring Cloud Engineer || Project Manager', // future job
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.grey,
-                          fontStyle:
-                              FontStyle.italic, // italic to match resumes
+                        SizedBox(height: 8),
+                        Text(
+                          'Aspiring Cloud Engineer || Project Manager', 
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey,
+                            fontStyle: FontStyle.italic, 
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ],
               ),
             ),
           ),
           Card(
-            margin: EdgeInsets.symmetric(horizontal: 12.0),
+            margin: const EdgeInsets.symmetric(horizontal: 12.0),
             child: Padding(
-              padding: EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(12.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'Personal Information', // Personal Information Header
+                  const Text(
+                    'Personal Information', 
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 12),
+                  const SizedBox(height: 12),
                   _buildInfoRow(
-                    // Email Address
                     Icons.email,
                     Colors.purple,
                     'Email',
                     'business.alfonsodolutan@gmail.com',
                   ),
                   _buildInfoRow(
-                    // Address
                     Icons.location_on,
                     Colors.red,
                     'Address',
                     '26 Fajardo Extention, Jaro, Iloilo City',
                   ),
                   _buildInfoRow(
-                    // Favorite Movie
                     Icons.tv,
                     Colors.blue,
                     'Favorite Show',
                     'Pacific Rim',
                   ),
                   _buildInfoRow(
-                    // Favorite Song
                     Icons.music_note,
                     Colors.green,
                     'Favorite Song',
                     'Yo x Ti, Tu x Mi by Rosalia & Ozuna',
                   ),
                   _buildInfoRow(
-                    // Hobbies
                     Icons.favorite,
                     Colors.pink,
                     'Hobbies',
@@ -150,21 +137,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
           ),
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
           Card(
-            margin: EdgeInsets.symmetric(horizontal: 12.0),
+            margin: const EdgeInsets.symmetric(horizontal: 12.0),
             child: Padding(
-              padding: EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(12.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: const [
                   Text(
                     'Biography',
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 12),
                   Text(
-                    // add my biography here, just a simple one though
                     'Jose Alfonso "Fons" Dolutan is a 2nd year student currently studying Computer Science in West Visayas State University. His goal in the future is to work as a "Project Manager" or "Cloud Engineer". He dreams to work for an overseas company like AWS or Google Cloud. He loves watching sports, cheering for FC Barcelona and McLaren Mastercard Formula One Team respectively. Currently, he is studying using AWS Skill Builder to further improve his knowledge about the cloud.',
                     style: TextStyle(fontSize: 14, height: 1.5),
                   ),
@@ -172,6 +158,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
           ),
+          const SizedBox(height: 32), // A little extra padding at the very bottom
         ],
       ),
     );
