@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.blue)),
-      home: const MyHomePage(title: 'Jose Alfonso Dolutan'), // full name
+      home: const MyHomePage(title: 'Jose Alfonso Dolutan'), // full name on top 
     );
   }
 }
@@ -27,6 +27,35 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Widget _buildInfoRow( // build a row using these attributes (reduces code duplication)
+    IconData icon, // icon before data
+    Color iconColor, // icon color
+    String label, // what will be hardcoded
+    String value, // int or string
+  ) {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Icon(icon, color: iconColor),
+            SizedBox(width: 16),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(label, style: TextStyle(fontSize: 12, color: Colors.grey)),
+                Text(
+                  value,
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                ),
+              ],
+            ),
+          ],
+        ),
+        SizedBox(height: 16),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Column(
+      body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Align(
@@ -43,8 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(
-                    // placeholder for my profile
+                  CircleAvatar( // where I would put my profile picture
                     radius: 50,
                     backgroundColor: Colors.grey,
                     child: Icon(Icons.person, size: 60, color: Colors.white),
@@ -55,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Jose Alfonso E. Dolutan', // full name
+                        'Jose Alfonso E. Dolutan', // my full name beside the profile picture
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
@@ -63,11 +91,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       SizedBox(height: 8),
                       Text(
-                        'Aspiring Cloud Engineer || Project Manager', // job
+                        'Aspiring Cloud Engineer || Project Manager', // future job
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.grey,
-                          fontStyle: FontStyle.italic,
+                          fontStyle: FontStyle.italic, // italic to match resumes
                         ),
                       ),
                     ],
@@ -88,165 +116,47 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(Icons.cake, color: Colors.blue),
-                      SizedBox(width: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Birthday',
-                            style: TextStyle(fontSize: 12, color: Colors.grey),
-                          ),
-                          Text(
-                            '[Your Birthday]',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                  _buildInfoRow(
+                    Icons.cake,
+                    Colors.blue,
+                    'Birthday',
+                    'May 30, 2005',
                   ),
-                  SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(Icons.location_on, color: Colors.red),
-                      SizedBox(width: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Address',
-                            style: TextStyle(fontSize: 12, color: Colors.grey),
-                          ),
-                          Text(
-                            '[Your Address]',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                  _buildInfoRow(
+                    Icons.location_on,
+                    Colors.red,
+                    'Address',
+                    '26 Fajardo Extention, Jaro, Iloilo City',
                   ),
-                  SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(Icons.email, color: Colors.purple),
-                      SizedBox(width: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Email',
-                            style: TextStyle(fontSize: 12, color: Colors.grey),
-                          ),
-                          Text(
-                            '[Your Email]',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                  _buildInfoRow(
+                    Icons.email,
+                    Colors.purple,
+                    'Email',
+                    'business.alfonsodolutan@gmail.com',
                   ),
-                  SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(Icons.phone, color: Colors.green),
-                      SizedBox(width: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Phone Number',
-                            style: TextStyle(fontSize: 12, color: Colors.grey),
-                          ),
-                          Text(
-                            '[Your Phone]',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                  _buildInfoRow(
+                    Icons.phone,
+                    Colors.green,
+                    'Phone Number',
+                    '+639470485638',
                   ),
-                  SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(Icons.school, color: Colors.orange),
-                      SizedBox(width: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Education',
-                            style: TextStyle(fontSize: 12, color: Colors.grey),
-                          ),
-                          Text(
-                            '[Your School]',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                  _buildInfoRow(
+                    Icons.school,
+                    Colors.orange,
+                    'Education',
+                    'West Visayas State University: Main Campus',
                   ),
-                  SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(Icons.book, color: Colors.teal),
-                      SizedBox(width: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Course',
-                            style: TextStyle(fontSize: 12, color: Colors.grey),
-                          ),
-                          Text(
-                            '[Your Course]',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                  _buildInfoRow(
+                    Icons.book,
+                    Colors.teal,
+                    'Course',
+                    'Bachelor of Science in Computer Science: Major in AI',
                   ),
-                  SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(Icons.favorite, color: Colors.pink),
-                      SizedBox(width: 16),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Hobbies',
-                            style: TextStyle(fontSize: 12, color: Colors.grey),
-                          ),
-                          Text(
-                            '[Your Hobbies]',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
+                  _buildInfoRow(
+                    Icons.favorite,
+                    Colors.pink,
+                    'Hobbies',
+                    'Football, Sim-Racing, Working Out, Sleeping, Music',
                   ),
                 ],
               ),
