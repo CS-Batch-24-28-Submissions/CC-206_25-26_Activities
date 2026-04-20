@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_info/card.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +31,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  
+  List<Container> myList = InfoCard.buildTemplateCards(4);
 
   @override
   Widget build(BuildContext context) {
@@ -52,12 +55,21 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
 
+          // More profile details section
+          
           Expanded(
-            child: Container(color: Colors.white)
+            child: ListView.separated(
+              padding: EdgeInsets.symmetric(horizontal: 5),
+              itemCount: myList.length,
+              itemBuilder: (context, index) {
+                return myList[index];
+              },
+              separatorBuilder: (context, index) => SizedBox(height: 12),
+            )
           ),
           
+          // Biography section
           Container(
-            color: Colors.grey, 
             height: 60
           ),
         ]
