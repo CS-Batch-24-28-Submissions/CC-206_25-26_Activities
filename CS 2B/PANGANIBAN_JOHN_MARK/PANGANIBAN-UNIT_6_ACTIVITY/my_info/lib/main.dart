@@ -85,9 +85,24 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
 
           // Biography section
-          Container(
-            height: 60
-          ),
+          Center(
+            child: Card(
+              margin: EdgeInsets.symmetric(horizontal: 32),
+              elevation: 8,
+              shadowColor: Colors.black,
+              child: Padding(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Hi, I am John Mark Panganiban!', 
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
+                    Text(Me.biography),
+                  ],
+                ),
+              ),
+            ),
+          )
         ]
       ),
     );
