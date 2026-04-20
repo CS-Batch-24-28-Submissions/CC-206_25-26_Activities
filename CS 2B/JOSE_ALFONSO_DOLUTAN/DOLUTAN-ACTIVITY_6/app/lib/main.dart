@@ -62,7 +62,7 @@ class _MainScreenState extends State<MainScreen> {
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
               child: const Text(
-                'Drawer',
+                'Drawer Menu',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
