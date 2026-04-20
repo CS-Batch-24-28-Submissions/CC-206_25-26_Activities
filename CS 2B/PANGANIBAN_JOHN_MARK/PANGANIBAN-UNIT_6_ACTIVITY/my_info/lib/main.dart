@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_info/card.dart';
+import 'package:my_info/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,8 +31,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-  List<Container> myList = InfoCard.buildTemplateCards(4);
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).primaryColor,
         title: Text(widget.title),
       ),
-      body: Column(
+      body: ListView(
         children: [
           // Profile section
           Row(
@@ -56,18 +54,36 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
 
           // More profile details section
-          
-          Expanded(
-            child: ListView.separated(
-              padding: EdgeInsets.symmetric(horizontal: 5),
-              itemCount: myList.length,
-              itemBuilder: (context, index) {
-                return myList[index];
-              },
-              separatorBuilder: (context, index) => SizedBox(height: 12),
-            )
+          ListTile(
+            leading: Icon(Icons.email),
+            title: Text('Email'),
+            subtitle: Text(Me.email),
           ),
-          
+
+          ListTile(
+            leading: Icon(Icons.school),
+            title: Text('Education'),
+            subtitle: Text(Me.education),
+          ),
+
+          ListTile(
+            leading: Icon(Icons.book),
+            title: Text('Course'),
+            subtitle: Text(Me.course)
+          ),
+
+           ListTile(
+            leading: Icon(Icons.sports_esports),
+            title: Text('Hobbies'),
+            subtitle: Text(Me.hobbies)
+          ),
+
+          ListTile(
+            leading: Icon(Icons.account_tree),
+            title: Text('Favorite Data Structure'),
+            subtitle: Text(Me.favoriteDS)
+          ),
+
           // Biography section
           Container(
             height: 60
