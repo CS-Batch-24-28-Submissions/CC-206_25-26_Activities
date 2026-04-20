@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_info/profile.dart';
+import 'package:my_info/about_me.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(width: 16),
                   Expanded(
                     child: Text(
-                      'John Mark Panganiban',
+                      Me.fullName,
                       style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                       softWrap: true,
                     ),
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Hi, I am John Mark Panganiban!', 
+                  Text('Hi, I am ${Me.fullName}!', 
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
                   Text(Me.biography),
                 ],
