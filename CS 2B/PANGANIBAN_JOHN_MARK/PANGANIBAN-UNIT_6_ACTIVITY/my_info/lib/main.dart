@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_info/about_me.dart';
+import 'package:flutter_soloud/flutter_soloud.dart';
 import 'package:my_info/screens/main_navigation.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SoLoud.instance.init();
   runApp(const MyApp());
 }
 
