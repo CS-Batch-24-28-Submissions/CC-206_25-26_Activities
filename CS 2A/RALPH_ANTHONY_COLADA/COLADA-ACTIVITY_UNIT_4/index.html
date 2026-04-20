@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#introduction" class="nav-link" data-section="introduction">Introduction</a>
+        <a href="#work" class="nav-link" data-section="work">My Work</a>
+        <a href="#skills" class="nav-link" data-section="skills">My Skills</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-scroll-spacer">
+    <section class="hero" id="home">
+
+        <span class="hero-greeting hero-greeting--left">Hello</span>
+        <img src="images/2_Me 1.png" alt="Ralph Anthony Portrait" class="hero-img"
+            onerror="this.style.display='none'; document.querySelector('.hero-placeholder').style.display='flex';">
+        <span class="hero-greeting hero-greeting--right">My name is</span>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-social">
+            <a href="https://www.linkedin.com/in/ralphcolada/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.facebook.com/Nuqlr/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://github.com/Numwit" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a>
+        </div>
+
+        <div class="hero-name-container">
+            <h1 class="hero-name hero-name--marquee">Ralph Anthony Colada</h1>
+            <h1 class="hero-name hero-name--marquee" aria-hidden="true">Ralph Anthony Colada</h1>
+            <div class="hero-name hero-name--static" aria-hidden="true">Ralph Anthony Colada</div>
+        </div>
+
+        <div class="hero-roles">
+            <span class="role-typed">// <span id="typed-role"></span><span class="typed-cursor">_</span></span>
+        </div>
+        <div class="hero-blackout"></div>
+    </section>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="introduction" id="introduction">
+        <div class="intro-container">
+            <span class="section-label">// Introduction</span>
+            <p class="intro-text">
+                Hello, I'm Ralph! A <span class="hl">Computer Science</span> student
+                studying in the Philippines. I aspire to become a
+                <span class="hl bold">Blockchain Developer</span> or a
+                <span class="hl">Cloud Architect</span>. I'm also a
+                <span class="hl bold">multidisciplinary creative</span> who has
+                <span class="hl">experience</span> in
+                <span class="hl">Video Editing</span>,
+                <span class="hl">3D Modeling</span>,
+                <span class="hl">Game Developing</span>,
+                <span class="hl">Music Producing</span>, and many more.
+            </p>
+            <blockquote class="intro-quote">
+                <span class="quote-mark">&ldquo;</span>
+                <p>Computer science is my toolkit, but my creative disciplines are my compass. They help me choose what to build, how to build it, and how to make it meaningful.&rdquo;</p>
+            </blockquote>
+            <a href="#work" class="btn-outline">See my Work</a>
+        </div>
+    </section>
+
+    <div class="work-skills-wrapper">
+    <!-- My Work Section -->
+    <section class="work" id="work">
+        <div class="work-container">
+            <span class="section-label">// My Work</span>
+            <div class="work-grid">
+                <!-- Row 1 -->
+                <a href="https://youtu.be/3nSZuVbfqyA" target="_blank" rel="noopener noreferrer" class="work-card">
+                    <!--
+                        PLACEHOLDER: Java fighting game trailer thumbnail
+                        Replace with: images/work-1.jpg
+                    -->
+                    <div class="work-img-placeholder">
+                        <img src="images/nexusbound_vid.png" alt="NexusBound: Elemental Fighting Game" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <p class="work-desc">Trailer of a program I developed alongside my group during our 2nd year finals project. It&rsquo;s a game developed entirely in Java and it demonstrates concepts of Java&rsquo;s Object Oriented Programming through a fighting-game theme.</p>
+                </a>
+                <div class="work-card">
+                    <!--
+                        PLACEHOLDER: Video editing snippet thumbnail
+                        Replace with: images/work-2.jpg
+                    -->
+                    <div class="work-img-placeholder">
+                        <img src="images/project_2.png" alt="Video Editing in Premiere Pro" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <p class="work-desc">Snippet of one of the videos I&rsquo;ve edited for a client using Premiere Pro. This took one day to edit despite the turnaround time allotted to me being 3 days. It received great feedback by the client.</p>
+                </div>
+                <div class="work-card">
+                    <!--
+                        PLACEHOLDER: Music beat cover/thumbnail
+                        Replace with: images/work-3.jpg
+                    -->
+                    <div class="work-img-placeholder">
+                        <img src="images/project_3.png" alt="FL Studios Beat Production" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <p class="work-desc">A beat I produced using FL Studios and industry plugins Omnisphere and Nexus 2. Heavily inspired by my favorite artists like Tyler the Creator and J.Cole, this was a passion project I made when learning music theory and fundamentals.</p>
+                </div>
+                <!-- Row 2 -->
+                <div class="work-card">
+                    <!--
+                        PLACEHOLDER: "Shipwreck" photograph
+                        Replace with: images/work-4.jpg
+                    -->
+                    <div class="work-img-placeholder">
+                        <img src="images/project_4.jpg" alt="Shipwreck Photography" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <p class="work-desc">The &ldquo;Shipwreck,&rdquo; which is a photo I captured when I was exploring the beach. The gear I used is a NIKKON D3100 with a 18-55mm lens. Post processing was done through Photoshop and Lightroom.</p>
+                </div>
+                <a href="https://youtu.be/RdeNEB6Ses0" target="_blank" rel="noopener noreferrer" class="work-card">
+                    <!--
+                        PLACEHOLDER: Game On! Hackathon game trailer thumbnail
+                        Replace with: images/work-5.jpg
+                    -->
+                    <div class="work-img-placeholder">
+                        <img src="images/project_5.png" alt="CalcuQuest - Game On! Hackathon" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <p class="work-desc">Trailer of a game I developed alongside my group during the Game On! Hackathon. I worked as Programmer, Game designer, and Level Designer. Through our efforts, we managed to win best Art and Design.</p>
+                </a>
+                <div class="work-card">
+                    <!--
+                        PLACEHOLDER: 3D Natu model render
+                        Replace with: images/work-6.jpg
+                    -->
+                    <div class="work-img-placeholder">
+                        <img src="images/project_6.gif" alt="3D Natu Model Render" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <p class="work-desc">Render of a 3D model I made for fun. I enjoy doing low-poly designs similar the style used in PSP games. The character is a purple Natu, which is a Pok&eacute;mon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-wrapper">
+            <span class="section-label">// My Skills</span>
+
+            <h3 class="skills-subtitle">Applications</h3>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/PREMIERE.png" alt="Premiere Pro">
+                    <span class="skill-name">Premiere Pro</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/AFTEREFFECTS.png" alt="After Effects">
+                    <span class="skill-name">After Effects</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/PHOTOSHOP.png" alt="Photoshop">
+                    <span class="skill-name">Photoshop</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/LIGHTROOM.png" alt="Lightroom">
+                    <span class="skill-name">Lightroom</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/FLSTUDIOS.png" alt="FL Studio">
+                    <span class="skill-name">FL Studio</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/UNITY.png" alt="Unity">
+                    <span class="skill-name">Unity</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/GODOT.png" alt="Godot">
+                    <span class="skill-name">Godot</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/BLENDER.png" alt="Blender">
+                    <span class="skill-name">Blender</span>
+                </div>
+            </div>
+
+            <h3 class="skills-subtitle">Coding Languages</h3>
+            <div class="skills-container coding">
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/JAVA.png" alt="Java">
+                    <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/CPP.png" alt="C++">
+                    <span class="skill-name">C++</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/GDSCRIPT.png" alt="GDScript">
+                    <span class="skill-name">GDScript</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/JS.png" alt="JavaScript">
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/CSS.png" alt="CSS">
+                    <span class="skill-name">CSS</span>
+                </div>
+                <div class="skill-item">
+                    <img class="skill-logo" src="images/HTML.png" alt="HTML">
+                    <span class="skill-name">HTML</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <div class="contact-info">
+                <span class="section-label contact-label">// Contact Me</span>
+                <h2 class="contact-heading">Let&rsquo;s get in<br>touch</h2>
+                <p class="contact-desc">Get in touch with me for any enquiries and questions</p>
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <strong>Phone</strong>
+                        <span>63+000-000-0000</span>
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Email</strong>
+                        <span>ralphanthony.colada@wvsu.edu.ph</span>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://www.facebook.com/Nuqlr/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ralphcolada/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Numwit" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3 class="form-title">Contact</h3>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Tell me what you're interested in</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-send">Send to me</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="end-of-page-pool">
+            <span class="fish" style="animation-delay: 0s;">End of page</span>
+            <span class="fish" style="animation-delay: 0.3s;">End of page</span>
+            <span class="fish" style="animation-delay: 1.1s;">End of page</span>
+            <span class="fish" style="animation-delay: 0.7s;">End of page</span>
+            <span class="fish" style="animation-delay: 1.8s;">End of page</span>
+            <span class="fish" style="animation-delay: 0.5s;">End of page</span>
+            <span class="fish" style="animation-delay: 2.3s;">End of page</span>
+            <span class="fish" style="animation-delay: 1.4s;">End of page</span>
+            <span class="fish" style="animation-delay: 0.9s;">End of page</span>
+            <span class="fish" style="animation-delay: 2.0s;">End of page</span>
+            <span class="fish" style="animation-delay: 1.6s;">End of page</span>
+            <span class="fish" style="animation-delay: 0.2s;">End of page</span>
+            <span class="fish" style="animation-delay: 2.5s;">End of page</span>
+            <span class="fish" style="animation-delay: 1.2s;">End of page</span>
+            <span class="fish" style="animation-delay: 0.8s;">End of page</span>
+            <span class="fish" style="animation-delay: 1.9s;">End of page</span>
+            <span class="fish" style="animation-delay: 0.4s;">End of page</span>
+            <span class="fish" style="animation-delay: 2.7s;">End of page</span>
+            <span class="fish" style="animation-delay: 1.5s;">End of page</span>
+            <span class="fish" style="animation-delay: 2.2s;">End of page</span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

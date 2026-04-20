@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font Reference taken from google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Jost:ital,wght@0,100..900;1,100..900&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Science+Gothic:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="img/faceko.jpeg"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Earl</span></h1>
+                <p>A Computer Science Student</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Info</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Weight Lifting 🏋️ </li>
+                        <li>Gaming 🎮</li>
+                        <li>Listening to Audio Books🎧</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Black Clover ⚔️</li>
+                        <li>Coffee☕</li>
+                        <li>Physical Activities 🧗‍♂️</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Running🏃</li>
+                        <li>Slow Internet🛜</li>
+                        <li>Big Crowds 🧑‍🤝‍🧑</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Git</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://www.orfonline.org/public/uploads/posts/image/img-Cybersecurity.jpg"
+                            alt="Project One">
+                    </div>
+                    <div class="project-info">
+                        <h3>GG Deals</h3>
+                        <p>A digital storefront dedicated to game deals, complete with a wishlist tool for monitoring price drops on your favorite titles.</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKlXwnx_zxuneHxvTmLYr0BNT80NcCv1SQNQ&s"
+                            alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>Comic Book Management System</h3>
+                        <p>A simple Java app that lets you organize your comic books, track your transactions, keep a history of your collection, and easily search through your titles.</p>
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I'm always open to talking about new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Earl Nengasca. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
