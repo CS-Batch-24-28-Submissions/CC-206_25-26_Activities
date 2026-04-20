@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
-            'Meet Bogart, my pet beagle!',
+            'Meet Bogart, my pet beagle!', // title text
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 40),
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/images/beagle.png',
+                    'assets/images/beagle.png', // link image here
                     width: 300, 
                     height: 300,
                     fit: BoxFit.cover,
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                         iconSize: 100,
                         icon: const Icon(Icons.volume_up, color: Colors.blue),
                         onPressed: () async {
-                          final player = AudioPlayer();
+                          final player = AudioPlayer(); // mp3 file here
                           await player.play(AssetSource('audio/beagle_sound.mp3'));
                         },
                       ),
@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                       const SizedBox(
                         width: 140,
                         child: Text(
-                          "Play me to hear Bogart's best howl!",
+                          "Play me to hear Bogart's best howl!", // make it howl on click
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 14,
