@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_info/about_me.dart';
+import 'package:my_info/screens/main_navigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My Profile',
+      home: const MainNavigation()
     );
   }
 }
