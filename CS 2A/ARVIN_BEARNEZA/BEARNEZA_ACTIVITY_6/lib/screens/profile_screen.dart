@@ -128,13 +128,13 @@ class ProfileScreen extends StatelessWidget {
                   _infoCard(
                     icon: Icons.location_on_outlined,
                     label: 'Address',
-                    value: 'Cebu City, Philippines',
+                    value: 'Bitoon Iloilo City, Philippines',
                     color: const Color(0xFF27AE60),
                   ),
                   _infoCard(
                     icon: Icons.email_outlined,
                     label: 'Email',
-                    value: 'arvin@wvsu.edu.ph',
+                    value: 'arvin.bearneza@wvsu.edu.ph',
                     color: const Color(0xFFE74C3C),
                   ),
                   _infoCard(
@@ -146,19 +146,19 @@ class ProfileScreen extends StatelessWidget {
                   _infoCard(
                     icon: Icons.favorite_outline,
                     label: 'Hobbies',
-                    value: 'Coding, Gaming, Listening to Music',
+                    value: 'Coding, Gaming, Watching Anime, Listening to Music',
                     color: const Color(0xFFE67E22),
                   ),
                   _infoCard(
                     icon: Icons.phone_outlined,
                     label: 'Phone Number',
-                    value: '+63 9XX XXX XXXX',
+                    value: '+63 966 748 7145',
                     color: const Color(0xFF1ABC9C),
                   ),
                   _infoCard(
                     icon: Icons.star_outline,
                     label: 'Skills',
-                    value: 'Flutter, Dart, Python, Git',
+                    value: 'Flutter, Dart, Python, Java, C++, Git, After Effects, Photoshop',
                     color: const Color(0xFFF39C12),
                   ),
 
@@ -208,7 +208,7 @@ class ProfileScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 14),
                         Text(
-                          'I am a passionate Computer Science student based in Cebu City, Philippines. '
+                          'I am a passionate Computer Science student based in Iloilo City, Philippines. '
                           'I have a deep love for technology and problem-solving, always eager to learn new '
                           'concepts and apply them in real-world projects. Outside of academics, I enjoy coding '
                           'personal projects, gaming, and listening to music to recharge. I believe in continuous '

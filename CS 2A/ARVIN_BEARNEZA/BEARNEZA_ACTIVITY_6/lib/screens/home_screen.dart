@@ -193,7 +193,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                           ),
                           const SizedBox(width: 12),
                           Text(
-                            _isPlaying ? 'Stop Meowing' : '🔊 Play Meow Sound',
+                            _isPlaying ? 'Stop Meowing' : 'Play Meow Sound',
                             style: GoogleFonts.nunito(
                               color: Colors.white,
                               fontSize: 17,
