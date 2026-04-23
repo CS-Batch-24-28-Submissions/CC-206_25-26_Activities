@@ -356,7 +356,7 @@ class _IdRow extends StatelessWidget {
 // info rows section
 class _InfoRows extends StatelessWidget {
   static const _items = [
-    _InfoData(Icons.email_outlined, 'EMAIL', 'ahlia.lawi@wvsu.com'),
+    _InfoData(Icons.email_outlined, 'EMAIL', 'ahlia.lawi@wvsu.edu.ph'),
     _InfoData(Icons.cake_outlined, 'BIRTHDAY', 'February 10, 2006'),
     _InfoData(Icons.location_on_outlined, 'ADDRESS', 'Iloilo City, Philippines'),
     _InfoData(Icons.school_outlined, 'UNIVERSITY', 'West Visayas State University'),
