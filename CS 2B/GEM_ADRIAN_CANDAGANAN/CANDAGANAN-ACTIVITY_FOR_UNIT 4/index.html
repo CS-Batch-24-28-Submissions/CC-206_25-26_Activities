@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Student<span> Portfolio</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <!--I changedthis to my own photo-->
+                    <img src="images/ID PIC.jpg"
+                        alt="Student Profile" class="profile-img">
+                </div>
+                <!---I changed the and major-->
+                <h1>Hi, I'm <span class="highlight">Gem Adrian C. Candaganan</span></h1>
+                <p>College Student | Aspiring Computer Scientist</p>
+                <div class="hero-buttons">
+                    <a href="#professional" class="btn primary">View Work</a>
+                    <a href="#personal" class="btn secondary">Know Me Better</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section">
+            <h2 class="section-title">Personal Side</h2>
+            <div class="personal-grid">
+                <div class="card glass">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <!--I listed my own hobbies-->
+                        <li>Travel 🏖️</li>
+                        <li>Tennis 🎾</li>
+                        <li>Reading 📔</li>
+                        <li>Watching Movies & Series📺</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Likes</h3>
+                    <ul>
+                        <!--I listed my own Likes-->
+                        <li>Talking about Politics, Social Science, and Societal Issues</li>
+                        <li>Go on Coffee Dates</li>
+                        <li>Exploring new Restaurants & Foods</li>
+                        <li>Networking</li>
+                        <li>Developing new talent or skill</li>
+                    </ul>
+                </div>
+                <div class="card glass">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <!--I listed my own Dislikes-->
+                        <li>Slow Internet</li>
+                        <li>Unresponsive People</li>
+                        <li>Narcissistic People</li>
+                        <li>Inability to Progress as a Person</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="professional" class="section">
+            <h2 class="section-title">Professional Journey</h2>
+
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <!--My own technical skills-->
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">Phyton</span>
+                    <span class="skill-badge">PHP</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Git</span>
+                </div>
+            </div>
+
+            <!--I added another section title to separate my projects from my technical skills-->
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="images/Genescape.png"
+                            alt="Project One">
+                    </div>
+                    <!--A project we made for our NSCI class last year-->
+                    <div class="project-info">
+                        <h3>GeneScape</h3>
+                        <p>A web application designed for studying Gene Theraphy. It contains activities and quizzes for fun and engagement.</p>
+                        <a href="https://nsci.onrender.com/?fbclid=IwY2xjawQGSqNleHRuA2FlbQIxMABicmlkETFPTkpvaW03WWhsN2luTXdTc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHgwLoFChXwejj6gciNcriVjfKoh3J2wtp9nGDfiQyVt4hXSE6mS2OJ8B6Khr_aem_aVAkF-ltqaskxeuEz5tSwA" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+                <!--A project we made for our Hackthon Entry Last Year-->
+                <div class="project-card glass">
+                    <div class="project-image">
+                        <img src="images/Poll-It-Teko - Cinergy.png"
+                            alt="Project Two">
+                    </div>
+                    <div class="project-info">
+                        <h3>Poll-iteko</h3>
+                        <p>A web application meant for voting, with suggestion algorithm based on platform, vision, & mission preferences.</p>
+                        <p><strong>Admin Credentials:</strong>User = admin, Password = admin</p>
+                        <p><strong>Voters Credentials:</strong>User = 10344, Password = voter</p>
+                        <a href="https://cin-ergy-polliteko.onrender.com" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card glass">
+                <p>I'm always open to talking about new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Gem Adrian Candaganan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
