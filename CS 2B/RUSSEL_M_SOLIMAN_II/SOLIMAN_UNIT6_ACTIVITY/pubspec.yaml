@@ -1,0 +1,24 @@
+name: soliman_unit6_activity
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.5.1   # or latest version
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sounds/aggressive cat sound.mp3
+    - assets/images/images.jpg
+    - assets/images/Profile.jpg
