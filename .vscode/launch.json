@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dart: Activity 5",
+      "type": "dart",
+      "request": "launch",
+      "program": "C:\\Users\\user\\Documents\\CC-206---Activities\\CS 2B\\AMAN_Elaijah\\AMAN-ACTIVITY_5\\AMAN-ACTIVITY_5.dart"
+    }
+  ]
+}
