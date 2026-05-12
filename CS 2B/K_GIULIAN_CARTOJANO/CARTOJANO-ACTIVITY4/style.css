@@ -1,0 +1,65 @@
+/* set */
+:root {
+    --primary: #0f172a;
+    --accent: #3b82f6;
+    --light: #f8fafc;
+    --white: #ffffff;
+}
+
+/* base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: #334155; background: var(--white); line-height: 1.6; }
+.container { max-width: 800px; margin: 0 auto; padding: 0 40px; } /* increased padding to center content more */
+
+/* nav */
+.navbar { background: var(--primary); padding: 1rem 0; color: var(--white); position: sticky; top: 0; z-index: 50; }
+.nav-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 60px;
+}
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+    gap: 40px;
+ }
+.nav-links a { color: var(--white); text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+
+/* hero */
+.hero { padding: 60px 0; text-align: center; background: var(--light); }
+.profile-pic { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--white); box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 15px; object-fit: cover; }
+
+/* sections */
+.section { padding: 50px 0; }
+.bg-alt { background-color: var(--light); }
+.marker { color: var(--primary); margin-bottom: 20px; border-bottom: 2px solid var(--accent); display: inline-block; }
+
+/* grid */
+.tech-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+.tech-card { 
+    background: var(--white); 
+    padding: 20px; 
+    border-radius: 8px; 
+    border: 1px solid #e2e8f0; 
+    /* added the vertical line effect here */
+    border-left: 5px solid var(--primary); 
+}
+.tech-card h3 { 
+    color: var(--accent); 
+    font-size: 1rem; 
+    margin-bottom: 8px; 
+}
+
+/* contact box */
+.contact-box { background: var(--light); padding: 25px; border-radius: 8px; border-left: 5px solid var(--primary); }
+.contact-box p { margin-bottom: 8px; font-size: 1.1rem; }
+
+/* footer */
+footer { padding: 20px 0; text-align: center; font-size: 0.8rem; border-top: 1px solid #eee; }
