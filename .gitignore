@@ -1,0 +1,25 @@
+# Dart/Flutter
+.dart_tool/
+.flutter-plugins-dependencies
+pubspec.lock
+build/
+.packages
+
+# Generated files
+**/generated_plugin_registrant.cc
+**/generated_plugin_registrant.h
+**/generated_plugins.cmake
+**/GeneratedPluginRegistrant.swift
+**/GeneratedPluginRegistrant.kt
+**/GeneratedPluginRegistrant.java
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
