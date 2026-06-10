@@ -82,7 +82,6 @@ class _AppShellState extends State<AppShell> {
       body: Center(
         child: Container(
           width: 360,
-          constraints: const BoxConstraints(maxHeight: 800),
           child: _screens[_selectedIndex],
         ),
       ),
@@ -208,6 +207,7 @@ class ProfileScreen extends StatelessWidget {
         _infoRow(Icons.book, 'Hobbies', 'Photography, Gaming'),
         _infoRow(Icons.location_city, 'City', 'Santa Barbara, Iloilo'),
         _infoRow(Icons.cake, 'Birthday', 'December 31, 2005'),
+        _infoRow(Icons.favorite, 'Status', 'In a relationship'),
         _infoRow(Icons.leaderboard, 'TFT Rank', 'Master (Set 16)'),
         const Divider(),
         const SizedBox(height: 16),
@@ -217,11 +217,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         const Text(
-          'Sean is a 20-year-old student from WVSU taking BS Computer Science. He currently serves as a Board Member for Programs in LINK.exe, and is also a senior photographer for the organization. He continues to develop skills in both leadership and creative work while balancing academics and responsibilities, with the goal of pursuing a future in CS-related or media-related field. Let\'s play TFT guys!',
-          style: TextStyle(fontSize: 16, height: 1.4),
-        ),
-        const Text(
-          '\nNote: Made for mobile view (preferrably 360px width)',
+          'Sean is a 20-year-old student from WVSU taking BS Computer Science. He currently serves as a Board Member for Programs in LINK.exe, and is also a senior photographer for the organization. Sean is also part of Creatives and Multimedia Committee of CIPHER. He continues to develop skills in both leadership and creative work while balancing academics and responsibilities, with the goal of pursuing a future in CS-related or media-related field.',
           style: TextStyle(fontSize: 16, height: 1.4),
         ),
       ],
