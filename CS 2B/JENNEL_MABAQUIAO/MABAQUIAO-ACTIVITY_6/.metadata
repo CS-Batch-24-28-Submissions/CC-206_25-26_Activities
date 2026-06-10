@@ -1,0 +1,18 @@
+version:
+  revision: "cc0734ac716fbb8b90f3f9db8020958b1553afa7"
+  channel: "stable"
+
+project_type: app
+
+migration:
+  platforms:
+    - platform: root
+      create_revision: cc0734ac716fbb8b90f3f9db8020958b1553afa7
+      base_revision: cc0734ac716fbb8b90f3f9db8020958b1553afa7
+    - platform: windows
+      create_revision: cc0734ac716fbb8b90f3f9db8020958b1553afa7
+      base_revision: cc0734ac716fbb8b90f3f9db8020958b1553afa7
+
+  unmanaged_files:
+    - 'lib/main.dart'
+    - 'ios/Runner.xcodeproj/project.pbxproj'

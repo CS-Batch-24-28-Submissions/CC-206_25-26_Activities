@@ -1,0 +1,95 @@
+// Jurquina Activity 5 - Dart 
+
+// Satisfies Constructing Class 
+class Animal {
+  String name;
+  String kingdom;
+  String dob;
+  int numlegs;
+
+  // Satisfies Constructor
+  Animal(this.name, this.kingdom, this.dob, this.numlegs);
+
+  // Satisfies Conditional Statements
+  void walk(String direction) {
+    if (numlegs == 0) {
+      print("$name can't walk.");
+    } else {
+      print("$name walks $direction.");
+    }
+  }
+
+  // Satisfies Fat Arrow 
+  String displayInfo() =>
+      "Name: $name, Kingdom: $kingdom, DOB: $dob, Legs: $numlegs";
+}
+
+// Satisfies Inheritance 
+class Pet extends Animal {
+  String? nickname;
+  int kindness;
+
+  // Satisfies Named Constructor
+  Pet(String name, String kingdom, String dob, int numlegs, this.nickname)
+      : kindness = 100,
+        super(name, kingdom, dob, numlegs);
+
+  // Satisfies Named Constructor (alt constructor)
+  Pet.noNickname(String name, String kingdom, String dob, int numlegs)
+      : kindness = 0,
+        super(name, kingdom, dob, numlegs);
+
+  void kick(int value) {
+    kindness -= value;
+    print("$name was kicked. Kindness: $kindness");
+  }
+
+  void pet(int value) {
+    if (kindness < 0) {
+      print("$name refuses to be petted!");
+    } else {
+      kindness += value;
+      print("$name is happy. Kindness: $kindness");
+    }
+  }
+
+  // Custom Method
+  void feed(int value) {
+    kindness += value;
+    print("$name was fed. Kindness: $kindness");
+  }
+}
+
+void main() {
+  // Satisfies Entry Point (main func)
+
+  // Satisfies Lists 
+  List<Animal> ZOO = [
+    Animal("Dog", "Mammal", "2026", 4),
+    Animal("Snake", "Reptile", "2018", 0),
+    Animal("Dove", "Bird", "2020", 2),
+    Animal("Frog", "Amphibian", "2019", 4),
+    Animal("Goldfish", "Fish", "2012", 0),
+  ];
+
+  // Satisfies Looping 
+  for (var animal in ZOO) {
+    print(animal.displayInfo());
+    animal.walk("forward");
+    print("");
+  }
+
+  // Satisfies Spread Operator (...)
+  List<Pet> PET_HOME = [
+    Pet("Dog", "Mammal", "2021", 4, "Buddy"),
+    ...[Pet.noNickname("Cat", "Mammal", "2022", 4)],
+    Pet("Parrot", "Bird", "2020", 2, "Sky"),
+  ];
+
+  // Satisfies Condition + Method Calls
+  PET_HOME[0].kick(200);
+  PET_HOME[1].kick(50);
+
+  PET_HOME[2].feed(1200);
+  PET_HOME[0].pet(1500);
+}
