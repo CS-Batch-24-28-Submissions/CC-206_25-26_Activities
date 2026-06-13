@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karlo Antonio Penaranda | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Karlo Antonio Penaranda home">KAP</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle color theme">Mode</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Student Developer Portfolio</p>
+        <h1>Karlo Antonio Penaranda</h1>
+        <p class="lead">
+          I am building practical web projects while strengthening my foundation in
+          front-end development, version control, and problem solving.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <figure class="profile-visual" aria-label="Karlo Antonio Penaranda profile">
+        <img
+          src="https://avatars.githubusercontent.com/u/276498634?v=4"
+          alt="GitHub profile avatar of Karlo Antonio Penaranda"
+        >
+        <figcaption>
+          <span>GitHub</span>
+          <strong>@karloantonopenaranda-creator</strong>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section split" id="about">
+      <div>
+        <p class="eyebrow">About Me</p>
+        <h2>Focused on clean interfaces and steady improvement.</h2>
+      </div>
+      <p>
+        I am a computer science student learning how to create responsive web
+        experiences with HTML, CSS, JavaScript, Git, and GitHub. I enjoy turning
+        ideas into organized pages that are easy to read, navigate, and improve.
+      </p>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools and strengths I am developing</h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card">
+          <h3>HTML</h3>
+          <p>Semantic page structure, accessible content, and organized markup.</p>
+        </article>
+        <article class="skill-card">
+          <h3>CSS</h3>
+          <p>Responsive layouts, visual hierarchy, and polished interface styling.</p>
+        </article>
+        <article class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Interactive page behavior, DOM updates, and small interface features.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Git and GitHub</h3>
+          <p>Local commits, remote repositories, branches, and pull requests.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+      </div>
+      <div class="filter-bar" aria-label="Project filters">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="web">Web</button>
+        <button class="filter-button" type="button" data-filter="practice">Practice</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card" data-category="web">
+          <p class="project-label">Web</p>
+          <h3>Personal Portfolio</h3>
+          <p>
+            A responsive portfolio website created for Unit 4 to introduce my
+            background, skills, contact information, and GitHub workflow.
+          </p>
+        </article>
+        <article class="project-card" data-category="practice">
+          <p class="project-label">Practice</p>
+          <h3>GitHub Submission Workflow</h3>
+          <p>
+            A practical exercise using fork, clone, commit, push, and pull
+            request steps to submit work to a shared class repository.
+          </p>
+        </article>
+        <article class="project-card" data-category="web">
+          <p class="project-label">Web</p>
+          <h3>Student Profile Page</h3>
+          <p>
+            A simple profile concept focused on readable content, responsive
+            spacing, and clear presentation of technical interests.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-band" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let us connect.</h2>
+      </div>
+      <div class="contact-actions">
+        <a class="button primary" href="mailto:karloantono.penaranda@wvsu.edu.ph">Email</a>
+        <a class="button secondary" href="https://github.com/karloantonopenaranda-creator" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="button secondary copy-email" type="button">Copy Email</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Karlo Antonio Penaranda. Built with HTML, CSS, JavaScript, Git, and GitHub.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

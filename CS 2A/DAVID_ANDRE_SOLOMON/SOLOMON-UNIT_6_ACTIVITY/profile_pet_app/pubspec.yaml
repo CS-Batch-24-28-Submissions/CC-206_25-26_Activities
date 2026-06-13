@@ -1,0 +1,34 @@
+name: profile_pet_app
+description: A Flutter app with profile screen and pet home screen for CC 206 Unit 6 Assignment.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Audio player for playing pet sounds
+  audioplayers: ^5.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ASSETS - ADD YOUR IMAGES AND AUDIO FILES HERE
+  assets:
+    # 🔴 CHANGE THESE PATHS - Add your actual image files
+    - assets/images/profile_pic.jpg    # Your profile picture
+    - assets/images/pet_pic.jpg         # Your pet picture
+    
+    # 🔴 CHANGE THESE PATHS - Add your actual audio file
+    - assets/sounds/cat_meow.mp3        # Pet sound (can be any sound)

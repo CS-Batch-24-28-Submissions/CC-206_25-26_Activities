@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "/Users/mareyflorencelosanes/Desktop/untitled folder/AppDev/CC-206_25-26_Activities/CS 2A/MAREY_FLORENCE_LOSANES/UNIT_4_ACTIVITY/index.html"
+        }
+    ]
+}
