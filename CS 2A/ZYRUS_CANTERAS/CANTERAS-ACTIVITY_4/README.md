@@ -6,8 +6,9 @@ Personal portfolio website by Zyrus Christian Canteras, CS 2A.
 
 - Responsive home and profile introduction
 - About and education details
-- Technical and professional skills
-- Selected programming projects
+- Software, electronics, and robotics skills
+- In-progress real-estate and automotive websites
+- Hands-on custom drone projects
 - Contact links
 
 Open `index.html` in a browser to view the website.
