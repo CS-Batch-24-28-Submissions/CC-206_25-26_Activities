@@ -548,6 +548,40 @@ a {
     var(--forest);
 }
 
+.project-image {
+  position: relative;
+  margin: 22px 0 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  background: var(--forest-dark);
+}
+
+.project-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 400ms ease;
+}
+
+.project-card-featured:hover .project-image img {
+  transform: scale(1.025);
+}
+
+.project-image figcaption {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  color: var(--white);
+  background: rgba(8, 28, 23, 0.82);
+  font-size: 0.68rem;
+  font-weight: 800;
+  backdrop-filter: blur(8px);
+}
+
 .project-number {
   color: #77a596;
   font-size: 0.76rem;
