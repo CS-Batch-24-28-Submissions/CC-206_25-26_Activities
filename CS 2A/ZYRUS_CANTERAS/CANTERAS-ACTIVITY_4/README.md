@@ -1,6 +1,6 @@
 # CC 206 Activity 4 Portfolio
 
-Personal portfolio website by Zyrus Christian E. Canteras, CS 2A.
+Personal portfolio website by Zyrus Christian Canteras, CS 2A.
 
 ## Contents
 
