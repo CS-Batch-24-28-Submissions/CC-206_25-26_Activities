@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Portfolio of Zyrus Christian Canteras, a Computer Science student and aspiring software developer."
+    >
+    <title>Zyrus Christian Canteras | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">ZC</span>
+        <span class="brand-name">Zyrus Christian Canteras</span>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-navigation" class="navigation" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Computer Science Student / Aspiring Developer</p>
+          <h1>I build practical ideas into <span>digital experiences.</span></h1>
+          <p class="hero-intro">
+            I am Zyrus Christian Canteras, a second-year Computer Science
+            student at West Visayas State University. I enjoy learning how
+            software, intelligent systems, and business ideas can solve
+            real-world problems.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work</a>
+            <a class="button button-secondary" href="#contact">Start a conversation</a>
+          </div>
+
+          <dl class="hero-stats" aria-label="Portfolio highlights">
+            <div>
+              <dt>3+</dt>
+              <dd>Featured projects</dd>
+            </div>
+            <div>
+              <dt>10</dt>
+              <dd>Core technologies</dd>
+            </div>
+            <div>
+              <dt>2nd</dt>
+              <dd>Year BSCS student</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-frame">
+            <div class="portrait-accent portrait-accent-top"></div>
+            <img
+              src="assets/profile.jpg"
+              alt="Portrait of Zyrus Christian Canteras"
+            >
+            <div class="portrait-card">
+              <span class="status-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Open to learning</strong>
+                <span>Building one project at a time</span>
+              </div>
+            </div>
+            <div class="portrait-accent portrait-accent-bottom"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell section-block">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About me</p>
+          <h2>Curious about technology. Focused on useful outcomes.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-story reveal">
+            <p>
+              I am developing my foundation in software engineering while
+              exploring entrepreneurship, artificial intelligence, robotics,
+              extended reality, and smart technology. Outside the classroom, I
+              gain practical experience through work involving cars and real
+              estate.
+            </p>
+            <p>
+              My long-term goal is to create innovative products that are
+              useful, accessible, and grounded in genuine needs. I value steady
+              improvement, direct communication, and learning by building.
+            </p>
+          </article>
+
+          <div class="about-details reveal">
+            <article class="detail-card">
+              <span class="detail-number">01</span>
+              <div>
+                <h3>Education</h3>
+                <p>BS Computer Science, West Visayas State University</p>
+              </div>
+            </article>
+            <article class="detail-card">
+              <span class="detail-number">02</span>
+              <div>
+                <h3>Based in</h3>
+                <p>Iloilo City, Philippines</p>
+              </div>
+            </article>
+            <article class="detail-card">
+              <span class="detail-number">03</span>
+              <div>
+                <h3>Interests</h3>
+                <p>Software, AI, robotics, XR, business, and smart systems</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills section-block">
+        <div class="section-shell">
+          <div class="section-heading section-heading-light reveal">
+            <p class="eyebrow">Skills and tools</p>
+            <h2>Tools I use to build software and robotic systems.</h2>
+          </div>
+
+          <div class="skill-layout">
+            <article class="skill-panel reveal">
+              <div class="skill-panel-heading">
+                <span>01</span>
+                <h3>Software development</h3>
+              </div>
+              <div class="skill-list">
+                <span>Dart</span>
+                <span>Flutter</span>
+                <span>Python</span>
+                <span>C++</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+
+            <article class="skill-panel reveal">
+              <div class="skill-panel-heading">
+                <span>02</span>
+                <h3>Robotics and electronics</h3>
+              </div>
+              <div class="skill-list">
+                <span>Arduino</span>
+                <span>ESP32</span>
+                <span>Sensor Integration</span>
+                <span>Motor Control</span>
+                <span>Drone Assembly</span>
+                <span>Circuit Troubleshooting</span>
+              </div>
+            </article>
+
+            <article class="skill-panel skill-panel-wide reveal">
+              <div class="skill-panel-heading">
+                <span>03</span>
+                <h3>Build and design workflow</h3>
+              </div>
+              <div class="strength-grid">
+                <p>Git and GitHub</p>
+                <p>VS Code</p>
+                <p>Rapid prototyping</p>
+                <p>Hardware testing</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section-shell section-block">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Digital ideas in progress and hands-on robotic builds.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card-featured reveal">
+            <div class="project-number">01</div>
+            <figure class="project-image">
+              <img
+                src="assets/drone-project.jpg"
+                alt="Custom quadcopter drone assembled by Zyrus Christian Canteras"
+              >
+              <figcaption>Custom-built quadcopter platform</figcaption>
+            </figure>
+            <div class="project-content">
+              <p class="project-type">Robotics / Completed Builds</p>
+              <h3>Custom Drone Projects</h3>
+              <p>
+                Hands-on drone builds involving frame selection, motor and ESC
+                installation, flight-controller wiring, component calibration,
+                testing, and troubleshooting for stable flight.
+              </p>
+              <div class="project-tags">
+                <span>Drone Assembly</span>
+                <span>Electronics</span>
+                <span>Flight Controllers</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <p class="project-type">Web Design / In Progress</p>
+              <h3>Real Estate Listing Website</h3>
+              <p>
+                A property-focused website concept for presenting listings,
+                prices, locations, and inquiry details through a clear,
+                responsive browsing experience.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <p class="project-type">Web Design / In Progress</p>
+              <h3>Automotive Showcase Website</h3>
+              <p>
+                An automotive website concept for organizing vehicle profiles,
+                specifications, photos, and availability in a polished catalog
+                for car buyers and enthusiasts.
+              </p>
+              <div class="project-tags">
+                <span>Responsive UI</span>
+                <span>Web Design</span>
+                <span>Vehicle Data</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-block">
+        <div class="section-shell contact-layout">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Have an idea, project, or opportunity?</h2>
+            <p>
+              I am always interested in learning from new challenges and
+              connecting with people who care about technology and innovation.
+            </p>
+          </div>
+
+          <div class="contact-actions reveal">
+            <a
+              class="contact-email"
+              href="mailto:zyruschristian.canteras@wvsu.edu.ph"
+            >
+              <span>Email me</span>
+              <strong>zyruschristian.canteras@wvsu.edu.ph</strong>
+            </a>
+            <a
+              class="button button-dark"
+              href="https://github.com/Demyzz"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View GitHub profile
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Zyrus Christian Canteras</p>
+      <p>CC 206 Activity 4 / <span id="current-year">2026</span></p>
+    </footer>
+  </body>
+</html>
