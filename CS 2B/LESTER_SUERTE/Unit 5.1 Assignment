@@ -1,0 +1,132 @@
+// CONCEPT 1: Object-Oriented Programming (Classes and Objects)
+// Defining the base class 'Animal' to model real-world animal entities.
+class Animal {
+  // CONCEPT 2: Instance Variables / Attributes
+  String name;
+  String kingdom;
+  DateTime dob;
+  int numLegs;
+
+  // Standard Constructor for Animal
+  Animal({
+    required this.name,
+    required this.kingdom,
+    required this.dob,
+    required this.numLegs,
+  });
+
+  // CONCEPT 3: Methods with Conditional Logic (Control Flow)
+  void walk(String direction) {
+    if (numLegs <= 0) {
+      print('$name can\'t walk because it has no legs.');
+    } else {
+      print('$name is walking to the $direction.');
+    }
+  }
+
+  // Method returning a formatted summary string
+  String displayInfo() {
+    return 'Name: $name | Kingdom: $kingdom | DOB: ${dob.toIso8601String().split('T')[0]} | Legs: $numLegs';
+  }
+}
+
+// CONCEPT 4: Inheritance (Subclassing)
+// 'Pet' extends 'Animal' to inherit its properties while adding specific pet behaviors.
+class Pet extends Animal {
+  String? nickname;
+  int kindness = 0;
+
+  // CONCEPT 5: Constructors (Named & Default Constructors with Initializer Lists)
+  // Constructor 1: Requiring the nickname, sets initial kindness to a positive value (e.g., 10)
+  Pet.withNickname({
+    required this.nickname,
+    required String name,
+    required String kingdom,
+    required DateTime dob,
+    required int numLegs,
+  }) : kindness = 10, 
+       super(name: name, kingdom: kingdom, dob: dob, numLegs: numLegs);
+
+  // Constructor 2: Excluding the pet nickname (remains null, kindness starts at 0)
+  Pet.withoutNickname({
+    required String name,
+    required String kingdom,
+    required DateTime dob,
+    required int numLegs,
+  }) : super(name: name, kingdom: kingdom, dob: dob, numLegs: numLegs);
+
+  // Method to decrease kindness
+  void kick(int reductionValue) {
+    kindness -= reductionValue;
+    print('You kicked ${nickname ?? name}. Kindness decreased by $reductionValue. Current Kindness: $kindness');
+  }
+
+  // Method to pet the animal (conditional on current kindness state)
+  void petAnimal(int incrementValue) {
+    if (kindness < 0) {
+      print('Action Failed: ${nickname ?? name} is too upset or scared to be petted right now.');
+    } else {
+      kindness += incrementValue;
+      print('You gently petted ${nickname ?? name}. Kindness increased by $incrementValue. Current Kindness: $kindness');
+    }
+  }
+
+  // CONCEPT 6: Custom Method modifying state 
+  // This method feeds the pet, dramatically boosting its kindness score.
+  void feedTreat(int treatQuality) {
+    int boost = treatQuality * 50;
+    kindness += boost;
+    print('You fed ${nickname ?? name} a delicious treat! Kindness skyrocketed by $boost. Current Kindness: $kindness');
+  }
+}
+
+void main() {
+  print('--- PART 1 & 3a: ZOO ANIMALS ---');
+  
+  // CONCEPT 7: Collections (Lists)
+  List<Animal> zoo = [
+    Animal(name: 'Leo the Lion', kingdom: 'Mammalia', dob: DateTime(2018, 5, 12), numLegs: 4),
+    Animal(name: 'Kaa the Snake', kingdom: 'Reptilia', dob: DateTime(2021, 8, 24), numLegs: 0),
+    Animal(name: 'Polly the Parrot', kingdom: 'Aves', dob: DateTime(2023, 3, 5), numLegs: 2),
+    Animal(name: 'Penny the Penguin', kingdom: 'Aves', dob: DateTime(2022, 11, 1), numLegs: 2),
+    Animal(name: 'Charlotte the Spider', kingdom: 'Arachnida', dob: DateTime(2025, 6, 15), numLegs: 8),
+  ];
+
+  // CONCEPT 8: Looping / Iteration (for-in loop)
+  // Iterating through the zoo array and invoking their methods.
+  for (var animal in zoo) {
+    print(animal.displayInfo());
+    animal.walk('North');
+    print('-' * 30);
+  }
+
+  print('\n--- PART 2 & 3b: PET HOME ---');
+
+  List<Pet> petHome = [
+    Pet.withNickname(nickname: 'Buddy', name: 'Dog', kingdom: 'Mammalia', dob: DateTime(2020, 1, 1), numLegs: 4),
+    Pet.withoutNickname(name: 'Whiskers', kingdom: 'Mammalia', dob: DateTime(2019, 4, 10), numLegs: 4),
+    Pet.withNickname(nickname: 'Goldie', name: 'Fish', kingdom: 'Actinopterygii', dob: DateTime(2024, 2, 18), numLegs: 0),
+  ];
+
+  // Condition 3.b.i: Decrease the kindness value of 1-2 pets below 0 (negative values)
+  print('--> Decreasing kindness below 0:');
+  petHome[0].kick(20); // Buddy starts at 10 -> drops to -10
+  petHome[0].petAnimal(5); // Testing the petting failure logic on Buddy
+
+  print('-' * 30);
+
+  // Condition 3.b.ii: Increase the kindness value of 1-2 pets above 1000
+  print('--> Increasing kindness above 1000:');
+  petHome[1].feedTreat(25); // 25 * 50 = 1250 kindness points
+  petHome[1].petAnimal(10); // Successfully pet Whiskers because kindness >= 0
+  
+  print('-' * 30);
+  
+  // Demonstrating the final status of all pets
+  print('--> Final Pet Home Summary:');
+  for (var pet in petHome) {
+    String petIdentity = pet.nickname != null ? '${pet.name} ("${pet.nickname}")' : pet.name;
+    print('$petIdentity | Total Kindness Score: ${pet.kindness}');
+  }
+}
+
